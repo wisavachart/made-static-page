@@ -1,3 +1,85 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* GLOBAL */
+.check {
+  border: 1px solid red;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: "Prompt", sans-serif;
+}
+/*SPECIAL COLOR GRADIENT */
+
+.made_pink_gradient {
+  background: rgb(254, 170, 230);
+  background: linear-gradient(
+    90deg,
+    rgba(254, 170, 230, 0.3078023445706407) 22%,
+    rgba(254, 170, 230, 1) 77%
+  );
+}
+
+.made_slide_overlay {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(6, 33, 112, 1) 100%
+  );
+}
+
+/* MENU ANIMATION */
+.box {
+  width: 0;
+  transition: width 0.5s ease-in-out;
+}
+
+.box.expand {
+  width: 100%;
+}
+
+/* swiper */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background: #cbcbcb;
+
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+/* .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+.swiper-pagination {
+  bottom: auto !important;
+}
+.swiper-pagination-bullet {
+  border: 1.5px solid #1c6adb;
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  background: transparent;
+}
+
+.swiper-pagination-bullet-active {
+  background: #1c6adb;
+  width: 14px;
+  height: 14px;
+}
