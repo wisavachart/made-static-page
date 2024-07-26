@@ -12,6 +12,10 @@ export default {
       colors: {
         md_gray: "#D1D1D1",
         md_darkblue: "#062170",
+        md_pink: "#FEAAE6",
+        md_pink_light: "#F1ECFF",
+        md_blue: "#1C6ADB",
+        md_border_grey: "#D9D9D9",
       },
     },
   },

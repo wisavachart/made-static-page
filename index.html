@@ -16,17 +16,8 @@
     <!-- NAV BAR -->
     <!-- NAV BAR -->
     <!-- NAV BAR -->
-    <!-- NAV BAR -->
-    <!-- NAV BAR -->
-    <!-- NAV BAR -->
-    <!-- NAV BAR -->
-    <!-- NAV BAR -->
-    <!-- NAV BAR -->
-    <!-- NAV BAR -->
-    <!-- NAV BAR -->
-    <!-- NAV BAR -->
-    <!-- NAV BAR -->
-    <nav class="w-full bg-white overflow-hidden drop-shadow-lg">
+    <nav
+      class="w-full bg-white overflow-hidden drop-shadow-lg fixed top-0 z-50">
       <!-- Social Icon  -->
       <div
         class="py-2 highstage:py-2 px-5 highstage:px-0 max-w-[1440px] mx-auto flex justify-between pt-2">
@@ -108,29 +99,24 @@
     <!-- Swiper MAIN -->
     <!-- Swiper MAIN -->
     <!-- Swiper MAIN -->
-    <!-- Swiper MAIN -->
-    <!-- Swiper MAIN -->
-    <!-- Swiper MAIN -->
-    <!-- Swiper MAIN -->
-    <!-- Swiper MAIN -->
-    <!-- Swiper MAIN -->
-    <!-- Swiper MAIN -->
-    <!-- Swiper MAIN -->
     <div
-      class="max-h-[540px] max-w-[1440px] mx-auto mt-10 px-5 highstage:px-0 relative flex items-center">
+      class="max-h-[540px] max-w-[1440px] mx-auto mt-20 midstage:mt-36 px-0 highstage:px-0 relative flex items-center">
       <div
-        class="hidden midstage:flex w-full absolute justify-between max-w-[1440px] mx-auto px-20 z-50 left-0">
+        class="hidden midstage:flex w-full absolute justify-between max-w-[1440px] mx-auto px-20 z-30 left-0">
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
-      <div class="swiper mySwiper">
+      <div class="swiper homeSwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide max-w-[960px] relative">
-            <img src="images/Test1.jpg" alt="" />
+            <img
+              class="min-h-[400px] object-cover"
+              src="images/Test1.jpg"
+              alt="" />
             <div
               class="absolute bottom-0 flex made_slide_overlay items-end w-full h-full md:h-[50%]">
               <div
-                class="w-full h-[70%] justify-end pb-3 bp_text_sm:pb-6 md:pb-10 bp_text_sm:h-[50%] bp_text_md:h-[70%] flex flex-col gap-3 px-3 bp_text_sm:px-6 md:px-10">
+                class="w-full h-[70%] justify-end pb-8 bp_text_sm:pb-6 md:pb-10 bp_text_sm:h-[50%] bp_text_md:h-[70%] flex flex-col gap-3 px-3 bp_text_sm:px-6 md:px-10">
                 <div class="bg-white w-fit px-3 py-1 rounded-2xl">
                   <h6
                     class="font-bold text-md_darkblue text-[12px] bp_text_sm:text-[14px] bp_text_md:text-[16px]">
@@ -138,7 +124,7 @@
                   </h6>
                 </div>
                 <h1
-                  class="text-white font-normal text-[16px] bp_text_md:text-[20px] md:text-[28px]">
+                  class="text-white font-normal text-[18px] bp_text_md:text-[20px] md:text-[28px]">
                   ECC เสาหลักที่ช่วยให้โลกดิจิทัลอยู่ได้โดยไม่ Error ECC
                   เสาหลักที่ช่วยให้โลกดิจิทัลอยู่ได้โดยไม่ Erro
                 </h1>
@@ -190,25 +176,175 @@
     </div>
     <div class="swiper-pagination flex items-center justify-center mt-5"></div>
 
-    <!-- Footer -->
-    <!-- Footer -->
-    <!-- Footer -->
-    <!-- Footer -->
+    <!-- SOCIAL NEW TITLE -->
+    <!-- SOCIAL NEW TITLE -->
+    <div
+      class="max-w-[1140px] mx-auto mt-14 midstage:mt-24 px-5 highstage:px-0">
+      <div class="relative flex h-[50px]">
+        <div class="relative">
+          <h1
+            class="font-extrabold text-[24px] midstage:text-[28px] tracking-widest z-10">
+            SOCIAL NEWS
+          </h1>
+          <div class="relative w-[100px] h-6 -z-20 -top-5">
+            <div class="h-6 made_pink_gradient"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper Recent -->
+    <!-- Swiper Recent -->
+    <div class="mt-20 midstage:mt-30">
+      <div
+        class="max-w-[1140px] mx-auto mt-14 midstage:mt-24 px-5 highstage:px-0">
+        <h1
+          class="font-extrabold text-[20px] midstage:text-[22px] tracking-widest z-10">
+          RECENT POST
+        </h1>
+      </div>
+      <div
+        class="px-5 highstage:px-0 max-h-[540px] max-w-[1140px] mx-auto relative flex items-center">
+        <div class="swiper recentSwiper">
+          <div class="swiper-wrapper">
+            <!-- RECENT 1 -->
+            <div
+              class="swiper-slide min-w-[160px] midstage:max-w-[360px] relative">
+              <div
+                class="h-fit max-w-[360px] border-2 border-x-md_border_grey flex flex-col">
+                <div class="flex">
+                  <img
+                    class="min-h-[100px] midstage:h-[200px] highstage:h-[270px] object-cover"
+                    src="/images/recent.jpg"
+                    alt="" />
+                </div>
+                <div class="p-2 midstage:p-4 flex flex-col gap-2">
+                  <div
+                    class="flex items-center gap-2 midstage:bg-md_pink_light w-fit midstage:px-3 midstage:py-2 rounded-2xl">
+                    <div
+                      class="w-[12px] h-[12px] rounded-full midstage:w-[16px] midstage:h-[16px] bg-md_blue"></div>
+                    <span
+                      class="text-md_darkblue font-light text-[14px] midstage:text-[16px]"
+                      >Social News</span
+                    >
+                  </div>
+                  <h6
+                    class="text-[16px] midstage:text-[18px] card_preview_title">
+                    เก่งไม่จริง ดีไม่พอ ถ่อมตัวจนเกินเหตุ
+                    ทำไมเราจึงชอบวิพากษ์วิจารณ์ตนเอง เก่งไม่จริง เก่งไม่จริง
+                    ดีไม่พอ ถ่อมตัวจนเกินเหตุ ทำไมเราจึงชอบวิพากษ์วิจารณ์ตนเอง
+                    เก่งไม่จริง
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <!-- RECENT 2 -->
+            <div
+              class="swiper-slide min-w-[160px] midstage:max-w-[360px] relative">
+              <div
+                class="h-fit max-w-[360px] border-2 border-x-md_border_grey flex flex-col">
+                <div class="flex">
+                  <img
+                    class="min-h-[100px] midstage:h-[200px] highstage:h-[270px] object-cover"
+                    src="/images/recent.jpg"
+                    alt="" />
+                </div>
+                <div class="p-2 midstage:p-4 flex flex-col gap-2">
+                  <div
+                    class="flex items-center gap-2 midstage:bg-md_pink_light w-fit midstage:px-3 midstage:py-2 rounded-2xl">
+                    <div
+                      class="w-[12px] h-[12px] rounded-full midstage:w-[16px] midstage:h-[16px] bg-md_blue"></div>
+                    <span
+                      class="text-md_darkblue font-light text-[14px] midstage:text-[16px]"
+                      >Social News</span
+                    >
+                  </div>
+                  <h6
+                    class="text-[16px] midstage:text-[18px] card_preview_title">
+                    เก่งไม่จริง ดีไม่พอ ถ่อมตัวจนเกินเหตุ
+                    ทำไมเราจึงชอบวิพากษ์วิจารณ์ตนเอง เก่งไม่จริง เก่งไม่จริง
+                    ดีไม่พอ ถ่อมตัวจนเกินเหตุ ทำไมเราจึงชอบวิพากษ์วิจารณ์ตนเอง
+                    เก่งไม่จริง
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <!-- RECENT 3 -->
+            <div
+              class="swiper-slide min-w-[160px] midstage:max-w-[360px] relative">
+              <div
+                class="h-fit max-w-[360px] border-2 border-x-md_border_grey flex flex-col">
+                <div class="flex">
+                  <img
+                    class="min-h-[100px] midstage:h-[200px] highstage:h-[270px] object-cover"
+                    src="/images/recent.jpg"
+                    alt="" />
+                </div>
+                <div class="p-2 midstage:p-4 flex flex-col gap-2">
+                  <div
+                    class="flex items-center gap-2 midstage:bg-md_pink_light w-fit midstage:px-3 midstage:py-2 rounded-2xl">
+                    <div
+                      class="w-[12px] h-[12px] rounded-full midstage:w-[16px] midstage:h-[16px] bg-md_blue"></div>
+                    <span
+                      class="text-md_darkblue font-light text-[14px] midstage:text-[16px]"
+                      >Social News</span
+                    >
+                  </div>
+                  <h6
+                    class="text-[16px] midstage:text-[18px] card_preview_title">
+                    เก่งไม่จริง ดีไม่พอ ถ่อมตัวจนเกินเหตุ
+                    ทำไมเราจึงชอบวิพากษ์วิจารณ์ตนเอง เก่งไม่จริง เก่งไม่จริง
+                    ดีไม่พอ ถ่อมตัวจนเกินเหตุ ทำไมเราจึงชอบวิพากษ์วิจารณ์ตนเอง
+                    เก่งไม่จริง
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <!-- RECENT 4 -->
+            <div
+              class="swiper-slide min-w-[160px] midstage:max-w-[360px] relative">
+              <div
+                class="h-fit max-w-[360px] border-2 border-x-md_border_grey flex flex-col">
+                <div class="flex">
+                  <img
+                    class="min-h-[100px] midstage:h-[200px] highstage:h-[270px] object-cover"
+                    src="/images/recent.jpg"
+                    alt="" />
+                </div>
+                <div class="p-2 midstage:p-4 flex flex-col gap-2">
+                  <div
+                    class="flex items-center gap-2 midstage:bg-md_pink_light w-fit midstage:px-3 midstage:py-2 rounded-2xl">
+                    <div
+                      class="w-[12px] h-[12px] rounded-full midstage:w-[16px] midstage:h-[16px] bg-md_blue"></div>
+                    <span
+                      class="text-md_darkblue font-light text-[14px] midstage:text-[16px]"
+                      >Social News</span
+                    >
+                  </div>
+                  <h6
+                    class="text-[16px] midstage:text-[18px] card_preview_title">
+                    เก่งไม่จริง ดีไม่พอ ถ่อมตัวจนเกินเหตุ
+                    ทำไมเราจึงชอบวิพากษ์วิจารณ์ตนเอง เก่งไม่จริง เก่งไม่จริง
+                    ดีไม่พอ ถ่อมตัวจนเกินเหตุ ทำไมเราจึงชอบวิพากษ์วิจารณ์ตนเอง
+                    เก่งไม่จริง
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="swiper-pagination-recent flex items-center justify-center mt-5"></div>
 
     <!-- Footer -->
     <!-- Footer -->
     <!-- Footer -->
     <!-- Footer -->
     <!-- Footer -->
-    <!-- Footer -->
-    <!-- Footer -->
-    <!-- Footer -->
-    <!-- Footer -->
-    <!-- Footer -->
-    <!-- Footer -->
-    <!-- Footer -->
 
-    <footer class="w-full overflow-hidden lg:block px-5 highstage:px-0">
+    <footer class="w-full overflow-hidden lg:block px-5 highstage:px-0 my-10">
       <!-- FOOTER HEADER RES -->
       <div class="lg:hidden flex gap-1 pt-4 pb-4 justify-between items-end">
         <img class="w-[60px] lg:w-[75px]" src="logo/md_icon.svg" alt="" />

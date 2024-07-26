@@ -1,4 +1,4 @@
-new Swiper(".mySwiper", {
+new Swiper(".homeSwiper", {
   slidesPerView: "auto",
   centeredSlides: true,
   loop: true,
