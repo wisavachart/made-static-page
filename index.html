@@ -11,79 +11,100 @@
     <title>Made space</title>
   </head>
   <body>
-    <!-- NAV BAR -->
-    <!-- NAV BAR -->
-    <!-- NAV BAR -->
-    <!-- NAV BAR -->
+    <!-- NAV Mobile -->
+    <div
+      class="pt-2 py-1 px-5 fixed w-full h-full top-0 z-200 midstage:hidden flex-col gap-7 bg-white"
+      id="mobile-nav">
+      <div class="flex justify-between items-center">
+        <img class="w-[50px]" src="logo/md_icon.svg" alt="" />
+        <!-- X BTN -->
+        <div
+          class="hamburger-menu midstage:hidden flex items-center relative z-200">
+          <div class="hamburger is-active" id="hamburger-close">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </div>
+      </div>
+      <div class="w-full flex flex-col">
+        <h1>Menu 1</h1>
+        <h1>Menu 2</h1>
+        <h1>Menu 3</h1>
+        <h1>Menu 4</h1>
+        <h1>Menu 5</h1>
+        <h1>Menu 1</h1>
+        <h1>Menu 2</h1>
+        <h1>Menu 3</h1>
+        <h1>Menu 4</h1>
+        <h1>Menu 5</h1>
+      </div>
+    </div>
     <!-- NAV BAR -->
     <nav
       class="w-full bg-white overflow-hidden drop-shadow-lg fixed top-0 z-50">
-      <!-- Social Icon  -->
       <div
-        class="py-2 highstage:py-2 px-5 highstage:px-0 max-w-[1440px] mx-auto flex justify-between pt-2">
-        <img class="w-[60px] midstage:w-[80px]" src="logo/md_icon.svg" alt="" />
+        class="py-1 highstage:py-1 midstage:items-center px-5 highstage:px-0 max-w-[1440px] mx-auto flex justify-between pt-2">
+        <img class="w-[50px] midstage:w-[70px]" src="logo/md_icon.svg" alt="" />
+        <!-- NOMAL NAV -->
         <div>
-          <div class="hidden midstage:flex justify-end gap-4 mt-2">
+          <!-- Social Icon  -->
+          <div class="hidden midstage:flex justify-end gap-4 mt-1">
             <a href="#">
-              <img class="w-[24px]" src="icon/b_facebook.svg" alt=""
+              <img class="w-[22px]" src="icon/b_facebook.svg" alt=""
             /></a>
-            <a href="#"> <img class="w-[24px]" src="icon/b_ig.svg" alt="" /></a>
-            <a href="#"><img class="w-[24px]" src="icon/b_x.svg" alt="" /></a>
+            <a href="#"> <img class="w-[22px]" src="icon/b_ig.svg" alt="" /></a>
+            <a href="#"><img class="w-[22px]" src="icon/b_x.svg" alt="" /></a>
             <a href="#">
-              <img class="w-[24px]" src="icon/b_youtube.svg" alt=""
+              <img class="w-[22px]" src="icon/b_youtube.svg" alt=""
             /></a>
           </div>
           <div
-            class="hidden midstage:flex justify-between max-w-[1440px] mx-auto items-center mb-2 relative -right-7">
+            class="hidden midstage:flex justify-between max-w-[1440px] mx-auto items-center mb-1 relative -right-0">
             <!-- MENU  -->
             <ul class="gap-12 hidden md:flex">
               <!-- MENU 1 -->
-              <div
-                class="menu_list relative flex cursor-pointer hover:font-bold">
+              <div class="menu_list relative flex cursor-pointer">
                 <div class="relative top-3">
-                  <h1 class="text-[18px] relative z-10">Home</h1>
-                  <div class="relative w-[80px] h-5 -z-1 -top-3">
-                    <div class="box h-5"></div>
+                  <h1 class="text-[16px] relative z-10">Home</h1>
+                  <div class="relative w-[50px] h-4 -z-1 -top-3">
+                    <div class="box h-4"></div>
                   </div>
                 </div>
               </div>
               <!-- MENU 2 -->
-              <div
-                class="menu_list relative flex cursor-pointer hover:font-bold">
+              <div class="menu_list relative flex cursor-pointer">
                 <div class="relative top-3">
-                  <h1 class="text-[18px] relative z-10">Social News</h1>
-                  <div class="relative w-[80px] h-5 -z-1 -top-3">
-                    <div class="box h-5"></div>
+                  <h1 class="text-[16px] relative z-10">Social News</h1>
+                  <div class="relative w-[50px] h-4 -z-1 -top-3">
+                    <div class="box h-4"></div>
                   </div>
                 </div>
               </div>
               <!-- MENU 3 -->
-              <div
-                class="menu_list relative flex cursor-pointer hover:font-bold">
+              <div class="menu_list relative flex cursor-pointer">
                 <div class="relative top-3">
-                  <h1 class="text-[18px] relative z-10">Ma-De Channel</h1>
-                  <div class="relative w-[80px] h-5 -z-1 -top-3">
-                    <div class="box h-5"></div>
+                  <h1 class="text-[16px] relative z-10">Ma-De Channel</h1>
+                  <div class="relative w-[50px] h-4 -z-1 -top-3">
+                    <div class="box h-4"></div>
                   </div>
                 </div>
               </div>
               <!-- MENU 4 -->
-              <div
-                class="menu_list relative flex cursor-pointer hover:font-bold">
+              <div class="menu_list relative flex cursor-pointer">
                 <div class="relative top-3">
-                  <h1 class="text-[18px] relative z-10">PR & Events</h1>
-                  <div class="relative w-[80px] h-5 -z-1 -top-3">
-                    <div class="box h-5"></div>
+                  <h1 class="text-[16px] relative z-10">PR & Events</h1>
+                  <div class="relative w-[50px] h-4 -z-1 -top-3">
+                    <div class="box h-4"></div>
                   </div>
                 </div>
               </div>
               <!-- MENU 5 -->
-              <div
-                class="menu_list relative flex cursor-pointer hover:font-bold">
+              <div class="menu_list relative flex cursor-pointer">
                 <div class="relative top-3">
-                  <h1 class="text-[18px] relative z-10">About</h1>
-                  <div class="relative w-[80px] h-5 -z-1 -top-3">
-                    <div class="box h-5"></div>
+                  <h1 class="text-[16px] relative z-10">About</h1>
+                  <div class="relative w-[50px] h-4 -z-1 -top-3">
+                    <div class="box h-4"></div>
                   </div>
                 </div>
               </div>
@@ -91,16 +112,21 @@
           </div>
         </div>
         <!-- HAMBUGER -->
-        <div class="midstage:hidden">Hambergur</div>
+        <div
+          class="hamburger-menu midstage:hidden flex items-center relative z-200">
+          <div class="hamburger" id="hamburger-open">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </div>
       </div>
     </nav>
-    <!-- Swiper MAIN -->
-    <!-- Swiper MAIN -->
-    <!-- Swiper MAIN -->
+
     <!-- Swiper MAIN -->
     <!-- Swiper MAIN -->
     <div
-      class="max-h-[540px] max-w-[1440px] mx-auto mt-20 midstage:mt-36 px-0 highstage:px-0 relative flex items-center">
+      class="max-h-[540px] max-w-[1440px] mx-auto mt-20 midstage:mt-24 px-0 highstage:px-0 relative flex items-center">
       <div
         class="hidden midstage:flex w-full absolute justify-between max-w-[1440px] mx-auto px-20 z-30 left-0">
         <div class="swiper-button-prev"></div>
@@ -175,7 +201,7 @@
       </div>
     </div>
     <div class="swiper-pagination flex items-center justify-center mt-5"></div>
-
+    <!-- SOCIAL NEW -->
     <!-- SOCIAL NEW TITLE -->
     <!-- SOCIAL NEW TITLE -->
     <div
@@ -192,7 +218,106 @@
         </div>
       </div>
     </div>
+    <section
+      class="max-w-[1140px] mx-auto mt-6 midstage:mt-6 px-5 highstage:px-0">
+      <div class="w-full grid grid-cols-3 gap-[30px]">
+        <!-- BIG CARD News -->
+        <div
+          class="border-2 border-x-md_border_grey col-span-3 midstage:col-span-2">
+          <img src="/images/Test1.jpg" alt="" />
+          <!-- TITILT A DESC -->
+          <div class="p-2 midstage:p-4 flex flex-col gap-2">
+            <h1 class="text-[20px] font-medium">
+              ECC เสาหลักที่ช่วยให้โลกดิจิทัลอยู่ได้โดยไม่ Error
+            </h1>
+            <h6
+              class="text-[16px] midstage:text-[16px] font-light card_preview_title">
+              ในฐานะของคนที่เกิดในช่วงรอยต่อระหว่างยุคอินเทอร์เน็ตดั้งเดิมและเทคโนโลยีสมัยใหม่กับเน็ตไฟเบอร์ความเร็วสูงของ
+              GenZ ก็คงไม่ใช่เรื่องแปลกอะไรที่ช่วงหนึ่งผมจะมี
+              โอกาสได้เล่นอยู่กับวัตถุสำหรับเก็บข้อมูลชนิดหนึ่งที่แบกโลกเอาไว้ได้ไม่ต่างจากที่คนยุคก่อนหน้ามีเทปและฟลอปปีดิสก์ใช้กันอยู่นานหลายปี 
+              วัตถุที่ว่านั้นคือ ออปติคัลดิสก์ ตั้งแต่ Compact Disk (CD),
+              Digital Video Disc / Digital Versatile Disc (DVD) และ Blu-ray Disc
+              (BD) ที่มาในช่วงปิดเกมพอดี (ช่วง ค.ศ. 2010)
+              ไม่กี่ปีก่อนที่โลกจะเข้าสู่ยุคออนไลน์อย่างเต็มรูปแบบหลังจากนั้น
+              ทำให้ระบบเก็บข้อมูลเหล่านี้จำต้องค่อยๆ
+              เลือนหายไปอย่างหลีกเลี่ยงไม่ได้
+            </h6>
+          </div>
+        </div>
+        <!-- OPINION CARD -->
+        <div class="bg-md_blue hidden midstage:block">OPINION CARD</div>
 
+        <!-- BIG CARD MINI 1 News -->
+        <div
+          class="border-2 border-x-md_border_grey col-span-3 midstage:col-span-1">
+          <img src="/images/Test1.jpg" alt="" />
+          <!-- TITILT A DESC -->
+          <div class="p-2 midstage:p-4 flex flex-col gap-2">
+            <h1 class="text-[18px] font-medium">
+              ECC เสาหลักที่ช่วยให้โลกดิจิทัลอยู่ได้โดยไม่ Error
+            </h1>
+            <h6
+              class="text-[16px] midstage:text-[16px] font-light card_preview_title">
+              ในฐานะของคนที่เกิดในช่วงรอยต่อระหว่างยุคอินเทอร์เน็ตดั้งเดิมและเทคโนโลยีสมัยใหม่กับเน็ตไฟเบอร์ความเร็วสูงของ
+              GenZ ก็คงไม่ใช่เรื่องแปลกอะไรที่ช่วงหนึ่งผมจะมี
+              โอกาสได้เล่นอยู่กับวัตถุสำหรับเก็บข้อมูลชนิดหนึ่งที่แบกโลกเอาไว้ได้ไม่ต่างจากที่คนยุคก่อนหน้ามีเทปและฟลอปปีดิสก์ใช้กันอยู่นานหลายปี 
+              วัตถุที่ว่านั้นคือ ออปติคัลดิสก์ ตั้งแต่ Compact Disk (CD),
+              Digital Video Disc / Digital Versatile Disc (DVD) และ Blu-ray Disc
+              (BD) ที่มาในช่วงปิดเกมพอดี (ช่วง ค.ศ. 2010)
+              ไม่กี่ปีก่อนที่โลกจะเข้าสู่ยุคออนไลน์อย่างเต็มรูปแบบหลังจากนั้น
+              ทำให้ระบบเก็บข้อมูลเหล่านี้จำต้องค่อยๆ
+              เลือนหายไปอย่างหลีกเลี่ยงไม่ได้
+            </h6>
+          </div>
+        </div>
+        <!-- BIG CARD MINI 1 News -->
+        <div
+          class="border-2 border-x-md_border_grey col-span-3 midstage:col-span-1">
+          <img src="/images/Test1.jpg" alt="" />
+          <!-- TITILT A DESC -->
+          <div class="p-2 midstage:p-4 flex flex-col gap-2">
+            <h1 class="text-[18px] font-medium">
+              ECC เสาหลักที่ช่วยให้โลกดิจิทัลอยู่ได้โดยไม่ Error
+            </h1>
+            <h6
+              class="text-[16px] midstage:text-[16px] font-light card_preview_title">
+              ในฐานะของคนที่เกิดในช่วงรอยต่อระหว่างยุคอินเทอร์เน็ตดั้งเดิมและเทคโนโลยีสมัยใหม่กับเน็ตไฟเบอร์ความเร็วสูงของ
+              GenZ ก็คงไม่ใช่เรื่องแปลกอะไรที่ช่วงหนึ่งผมจะมี
+              โอกาสได้เล่นอยู่กับวัตถุสำหรับเก็บข้อมูลชนิดหนึ่งที่แบกโลกเอาไว้ได้ไม่ต่างจากที่คนยุคก่อนหน้ามีเทปและฟลอปปีดิสก์ใช้กันอยู่นานหลายปี 
+              วัตถุที่ว่านั้นคือ ออปติคัลดิสก์ ตั้งแต่ Compact Disk (CD),
+              Digital Video Disc / Digital Versatile Disc (DVD) และ Blu-ray Disc
+              (BD) ที่มาในช่วงปิดเกมพอดี (ช่วง ค.ศ. 2010)
+              ไม่กี่ปีก่อนที่โลกจะเข้าสู่ยุคออนไลน์อย่างเต็มรูปแบบหลังจากนั้น
+              ทำให้ระบบเก็บข้อมูลเหล่านี้จำต้องค่อยๆ
+              เลือนหายไปอย่างหลีกเลี่ยงไม่ได้
+            </h6>
+          </div>
+        </div>
+        <!-- BIG CARD MINI 1 News -->
+        <div
+          class="border-2 border-x-md_border_grey col-span-3 midstage:col-span-1">
+          <img src="/images/Test1.jpg" alt="" />
+          <!-- TITILT A DESC -->
+          <div class="p-2 midstage:p-4 flex flex-col gap-2">
+            <h1 class="text-[18px] font-medium">
+              ECC เสาหลักที่ช่วยให้โลกดิจิทัลอยู่ได้โดยไม่ Error
+            </h1>
+            <h6
+              class="text-[16px] midstage:text-[16px] font-light card_preview_title">
+              ในฐานะของคนที่เกิดในช่วงรอยต่อระหว่างยุคอินเทอร์เน็ตดั้งเดิมและเทคโนโลยีสมัยใหม่กับเน็ตไฟเบอร์ความเร็วสูงของ
+              GenZ ก็คงไม่ใช่เรื่องแปลกอะไรที่ช่วงหนึ่งผมจะมี
+              โอกาสได้เล่นอยู่กับวัตถุสำหรับเก็บข้อมูลชนิดหนึ่งที่แบกโลกเอาไว้ได้ไม่ต่างจากที่คนยุคก่อนหน้ามีเทปและฟลอปปีดิสก์ใช้กันอยู่นานหลายปี 
+              วัตถุที่ว่านั้นคือ ออปติคัลดิสก์ ตั้งแต่ Compact Disk (CD),
+              Digital Video Disc / Digital Versatile Disc (DVD) และ Blu-ray Disc
+              (BD) ที่มาในช่วงปิดเกมพอดี (ช่วง ค.ศ. 2010)
+              ไม่กี่ปีก่อนที่โลกจะเข้าสู่ยุคออนไลน์อย่างเต็มรูปแบบหลังจากนั้น
+              ทำให้ระบบเก็บข้อมูลเหล่านี้จำต้องค่อยๆ
+              เลือนหายไปอย่างหลีกเลี่ยงไม่ได้
+            </h6>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Swiper Recent -->
     <!-- Swiper Recent -->
     <div class="mt-20 midstage:mt-30">
@@ -340,9 +465,6 @@
 
     <!-- Footer -->
     <!-- Footer -->
-    <!-- Footer -->
-    <!-- Footer -->
-    <!-- Footer -->
 
     <footer class="w-full overflow-hidden lg:block px-5 highstage:px-0 my-10">
       <!-- FOOTER HEADER RES -->
@@ -473,6 +595,7 @@
 
       <!-- RES FOOTER -->
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="/main.js"></script>
   </body>

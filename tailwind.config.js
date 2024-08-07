@@ -15,7 +15,13 @@ export default {
         md_pink: "#FEAAE6",
         md_pink_light: "#F1ECFF",
         md_blue: "#1C6ADB",
+        md_black: "#231F20",
         md_border_grey: "#D9D9D9",
+      },
+      zIndex: {
+        100: "100",
+        200: "100",
+        300: "100",
       },
     },
   },

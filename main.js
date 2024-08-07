@@ -1,5 +1,12 @@
-// import "./style.css";
-import { selectMenu } from "/src/menu.js";
-import "/src/mainSlider.js";
-import "/src/recentSlider";
-selectMenu();
+import Slider from "./src/slider";
+import NavBar from "./src/navbar";
+import MadeChannelApp from "./src/madeChannelSection";
+
+class Main {
+  constructor() {
+    new Slider();
+    new NavBar();
+    // new MadeChannelApp();
+  }
+}
+new Main();
