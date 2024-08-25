@@ -1,12 +1,21 @@
 class NavBar {
   constructor() {
+    this.isOpen = false;
+    this.isSubMenuOpen = false;
     this._menues = document.querySelectorAll(".menu_list");
     this._gradientTab = document.querySelectorAll(".box");
-    this._hamburgerOpen = document.getElementById("hamburger-open");
-    this._hamburgerClose = document.getElementById("hamburger-close");
-    this._responsiveNav = document.getElementById("mobile-nav");
+    this._hamburger = document.getElementById("hamburger_menu");
+    this._SideNavbar = document.getElementById("sideNavbar");
+    this._sidebarMenuItem = document.querySelectorAll(".sidebarMenuItem");
+    this._subMenu = document.getElementById("subMenu");
+    this._openSubMenuBtn = document.getElementById("open-sub");
+    this.isSubDeskTopOpen = false;
+    this._arrow = document.getElementById("arrow");
+    this.submeMudesktop = document.getElementById("submenu-desktop");
     this.addEventListener();
   }
+
+  // ALL EVENTS
   addEventListener() {
     this._menues.forEach((el, index) =>
       el.addEventListener("mouseover", () => this._onMouseOver(index))
@@ -14,15 +23,27 @@ class NavBar {
     this._menues.forEach((el, index) =>
       el.addEventListener("mouseout", () => this._onMouseOut(index))
     );
-    this._hamburgerOpen.addEventListener(
+    this._hamburger.addEventListener(
       "click",
-      this._openResponsiveNav.bind(this)
+      this._hamburgerMenuClick.bind(this)
     );
-    this._hamburgerClose.addEventListener(
+    this._sidebarMenuItem.forEach((menuItem) =>
+      menuItem.addEventListener("click", () => {
+        this.animateMenuList(menuItem);
+        setTimeout(() => {
+          this._clearAfterClick();
+        }, 400);
+      })
+    );
+    this._openSubMenuBtn.addEventListener(
       "click",
-      this._closeResponsiveNav.bind(this)
+      this._subMenuBtnCilck.bind(this)
     );
+
+    this._arrow.addEventListener("click", this._onArrowClick.bind(this));
   }
+
+  //DESKTOP NAV METHOD
   _onMouseOver(index) {
     this._gradientTab[index].classList.add("made_pink_gradient", "expand");
   }
@@ -30,11 +51,118 @@ class NavBar {
   _onMouseOut(index) {
     this._gradientTab[index].classList.remove("made_pink_gradient", "expand");
   }
-  _openResponsiveNav() {
-    this._responsiveNav.classList.add("open-nav");
+
+  _onArrowClick() {
+    this.isSubDeskTopOpen = !this.isSubDeskTopOpen;
+    this.animateButton(this._arrow);
+    this._renderSubMenuDeskTop();
   }
-  _closeResponsiveNav() {
-    this._responsiveNav.classList.remove("open-nav");
+  _renderSubMenuDeskTop() {
+    !this.isSubDeskTopOpen
+      ? this.animateSubdesktopOut()
+      : this.animateSubdesktopIn();
+  }
+
+  //MOBILE NAV METHOD
+  _hamburgerMenuClick() {
+    this.isOpen = !this.isOpen;
+    this._renderSideNavbar();
+    this.animateButton(this._hamburger);
+  }
+
+  _clearAfterClick() {
+    this.isOpen = false;
+    this._renderSideNavbar();
+  }
+  _subMenuBtnCilck() {
+    this.isSubMenuOpen = !this.isSubMenuOpen;
+    this.animateOpenSubBtn();
+    this._renderSubMenu();
+  }
+
+  _renderSideNavbar() {
+    !this.isOpen ? this.animateOut() : this.animateIn();
+  }
+  _renderSubMenu() {
+    !this.isSubMenuOpen ? this.animateExpandOut() : this.animateExpandIn();
+  }
+
+  //ANIMATION METHOD
+  animateIn() {
+    gsap.to(this._SideNavbar, {
+      x: 0,
+      ease: "power2.out",
+      duration: 0.4,
+    });
+  }
+  animateOut() {
+    gsap.to(this._SideNavbar, {
+      x: -400,
+      ease: "power2.in",
+      duration: 0.6,
+    });
+  }
+  animateButton(btn) {
+    gsap.to(btn, {
+      scale: 0.5,
+      ease: "power2.in",
+      repeat: 1,
+      duration: 0.2,
+      yoyo: true,
+    });
+  }
+  animateMenuList(menu) {
+    gsap.to(menu, {
+      scale: 0.9,
+      ease: "power2.in",
+      repeat: 1,
+      duration: 0.2,
+      yoyo: true,
+    });
+  }
+  animateExpandOut() {
+    gsap.to(this._subMenu, {
+      height: 0,
+      ease: "power4.in",
+      duration: 0.2,
+      onComplete: () => {
+        this._subMenu.style.display = "none";
+      },
+    });
+  }
+  animateExpandIn() {
+    this._subMenu.style.display = "flex";
+    gsap.fromTo(
+      this._subMenu,
+      { height: 0, ease: "power4.in", duration: 0.4 },
+      {
+        height: 200,
+        ease: "power2.in",
+        duration: 0.4,
+      }
+    );
+  }
+  animateOpenSubBtn() {
+    gsap.to(this._openSubMenuBtn, {
+      rotate: !this.isSubMenuOpen ? -90 : 0,
+      ease: "power2.inOut",
+      duration: 0.2,
+    });
+  }
+
+  animateSubdesktopIn() {
+    gsap.to(this.submeMudesktop, {
+      opacity: 1,
+      ease: "power4.in",
+      duration: 0.2,
+    });
+  }
+  animateSubdesktopOut() {
+    gsap.to(this.submeMudesktop, {
+      opacity: 0,
+      ease: "power4.in",
+      duration: 0.2,
+    });
   }
 }
 

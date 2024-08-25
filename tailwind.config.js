@@ -4,10 +4,9 @@ export default {
   theme: {
     extend: {
       screens: {
-        highstage: "1440px",
-        midstage: "817px",
-        bp_text_sm: "426px",
-        bp_text_md: "690px",
+        mb_s: "320px",
+        mb_m: "375px",
+        mb_L: "425px",
       },
       colors: {
         md_gray: "#D1D1D1",
@@ -17,6 +16,8 @@ export default {
         md_blue: "#1C6ADB",
         md_black: "#231F20",
         md_border_grey: "#D9D9D9",
+        md_grey_menu: "#525866",
+        md_grey_blue: "#E6EFF5",
       },
       zIndex: {
         100: "100",

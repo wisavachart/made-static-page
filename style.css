@@ -6,6 +6,12 @@
 .check {
   border: 1px solid red;
 }
+.border-submenu {
+  border: 1px solid #e6e6e6;
+}
+.border-right {
+  border-right: 1px solid #e6e6e6;
+}
 
 * {
   margin: 0;
@@ -18,6 +24,7 @@ body {
   background-color: #fafafa;
   font-family: "Prompt", sans-serif;
 }
+
 /*SPECIAL COLOR GRADIENT */
 
 .made_pink_gradient {
@@ -39,55 +46,54 @@ body {
 }
 
 /* MENU ANIMATION */
+
+#submenu-desktop {
+  opacity: 0;
+}
+/* devider */
+#devider {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #c8c8c8;
+}
+.box.expand {
+  width: 100%;
+}
 .box {
   width: 0;
   transition: width 0.5s ease-in-out;
 }
-
-.box.expand {
-  width: 100%;
-}
-
-.hamburger .line {
-  width: 30px;
-  height: 3px;
-  background-color: #231f20;
-  display: block;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.hamburger:hover {
+/* Hamburger Menu */
+#hamburger_menu {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 50%;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.hamburger_line {
+  border-radius: 2px;
+  width: 26px;
+  height: 4px;
+  background: #231f20;
 }
 
-#hamburger-close.is-active .line:nth-child(2) {
-  opacity: 0;
+.sidenavClose {
+  transform: translateX(-400px);
 }
-
-#hamburger-close.is-active .line:nth-child(1) {
-  -webkit-transform: translateY(8px) rotate(45deg);
-  -ms-transform: translateY(8px) rotate(45deg);
-  -o-transform: translateY(8px) rotate(45deg);
-  transform: translateY(8px) rotate(45deg);
+.submenu-hide {
+  display: none;
 }
-
-#hamburger-close.is-active .line:nth-child(3) {
-  -webkit-transform: translateY(-8px) rotate(-45deg);
-  -ms-transform: translateY(-8px) rotate(-45deg);
-  -o-transform: translateY(-8px) rotate(-45deg);
-  transform: translateY(-8px) rotate(-45deg);
-}
-
-#mobile-nav {
-  left: -816px;
-  /* left: 0px; */
-  transition: left 0.4s ease-out;
-}
-#mobile-nav.open-nav {
-  left: 0px;
+.submenu-desktop-bg:hover {
+  background: rgb(254, 170, 230);
+  background: linear-gradient(
+    90deg,
+    rgba(254, 170, 230, 0.3078023445706407) 22%,
+    rgba(254, 170, 230, 1) 77%
+  );
+  font-weight: 400;
 }
 
 /* swiper */
