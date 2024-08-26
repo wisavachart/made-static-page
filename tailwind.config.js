@@ -18,6 +18,7 @@ export default {
         md_border_grey: "#D9D9D9",
         md_grey_menu: "#525866",
         md_grey_blue: "#E6EFF5",
+        md_grey_bg: "#E6E6E6",
       },
       zIndex: {
         100: "100",
