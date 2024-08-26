@@ -12,6 +12,9 @@
 .border-right {
   border-right: 1px solid #e6e6e6;
 }
+.border-bottom {
+  border-bottom: 2px solid #e6e6e6;
+}
 
 * {
   margin: 0;
@@ -57,7 +60,7 @@ body {
   border-bottom: 1px solid #c8c8c8;
 }
 .box.expand {
-  width: 100%;
+  width: 50px;
 }
 .box {
   width: 0;

@@ -15,13 +15,14 @@
   </head>
   <body>
     <!-- *********************NAV******************** !-->
-    <!-- nav desktop -->
+    <!-- nav desktop / Tablet -->
     <nav
-      class="hidden md:flex h-[72px] w-full bg-white py-2 px-6 items-center shadow-md">
-      <div class="items-center justify-between flex md:w-full">
-        <img class="h-[48px]" src="/logo/md_icon.svg" alt="logo" />
-        <div class="flex flex-col items-end gap-2">
-          <div class="md:hidden flex items-center gap-4">
+      class="hidden md:flex h-[84px] w-full bg-white py-2 px-6 lg:h-[96px] items-center border-bottom">
+      <div
+        class="items-center justify-between flex md:w-full lg:max-w-[1440px] lg:mx-auto">
+        <img class="h-[56px] lg:h-[64px]" src="/logo/md_icon.svg" alt="logo" />
+        <div class="flex flex-col items-end gap-3">
+          <div class="flex items-center gap-4">
             <a href="">
               <img class="w-[24px]" src="icon/b_facebook.svg" alt=""
             /></a>
@@ -31,16 +32,29 @@
               <img class="w-[24px]" src="icon/b_youtube.svg" alt=""
             /></a>
           </div>
-          <div class="flex text-[18px] gap-10 text-md_grey_menu font-medium">
+          <div
+            class="flex text-[18px] gap-10 lg:gap-14 text-md_grey_menu font-medium">
             <a href="#"
-              ><div><h6>Home</h6></div></a
-            >
+              ><div class="relative menu_list hover:text-md_black">
+                <h6 class="relative z-10">Home</h6>
+                <div class="h-[16px] box absolute top-4 left-0 z-0"></div></div
+            ></a>
             <a href="#"
-              ><div><h6>Social News</h6></div></a
-            >
+              ><div>
+                <div class="relative menu_list hover:text-md_black">
+                  <h6 class="relative z-10">Social News</h6>
+                  <div class="h-[16px] box absolute top-4 left-0 z-0"></div>
+                </div></div
+            ></a>
             <div class="flex flex-col relative items-center">
               <div class="flex gap-4">
-                <a href="#"><h6>Ma-De Channel</h6></a>
+                <a href="#"
+                  ><div>
+                    <div class="relative menu_list hover:text-md_black">
+                      <h6 class="relative z-10">Ma-De Channel</h6>
+                      <div class="h-[16px] box absolute top-4 left-0 z-0"></div>
+                    </div></div
+                ></a>
                 <img
                   id="arrow"
                   class="w-[16px] cursor-pointer"
@@ -80,18 +94,22 @@
               </div>
             </div>
             <a href="#"
-              ><div><h6>PR & Events</h6></div></a
-            >
+              ><div class="relative menu_list hover:text-md_black">
+                <h6 class="relative z-10">PR & Events</h6>
+                <div class="h-[16px] box absolute top-4 left-0 z-0"></div></div
+            ></a>
             <a href="#"
-              ><div><h6>About</h6></div></a
-            >
+              ><div class="relative menu_list hover:text-md_black">
+                <h6 class="relative z-10">About</h6>
+                <div class="h-[16px] box absolute top-4 left-0 z-0"></div></div
+            ></a>
           </div>
         </div>
       </div>
     </nav>
     <!-- nav mobile -->
     <nav
-      class="md:hidden w-full h-[64px] px-4 py-1 justify-between flex bg-white shadow-md items-center fixed top-0">
+      class="md:hidden w-full h-[64px] px-4 py-1 justify-between flex bg-white border-bottom items-center fixed top-0">
       <img class="h-[40px]" src="/logo/md_icon.svg" alt="logo" />
       <div id="hamburger_menu">
         <div class="hamburger_line"></div>
