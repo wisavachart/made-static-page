@@ -17,7 +17,7 @@
     <!-- *********************NAV******************** !-->
     <!-- nav desktop / Tablet -->
     <nav
-      class="hidden fixed top-0 md:flex h-[84px] w-full bg-white py-2 px-6 lg:h-[96px] items-center border-bottom">
+      class="z-50 hidden fixed top-0 md:flex h-[84px] w-full bg-white py-2 px-6 lg:h-[96px] items-center border-bottom">
       <div
         class="items-center justify-between flex md:w-full lg:max-w-[1440px] lg:mx-auto">
         <img class="h-[56px] lg:h-[64px]" src="/logo/md_icon.svg" alt="logo" />
@@ -57,7 +57,7 @@
                 ></a>
                 <div
                   id="arrow"
-                  class="px-[6px] py-2 rounded-md hover:bg-md_grey_bg cursor-pointer">
+                  class="px-[6px] py-2 rounded-md hover:bg-md_grey_bg cursor-pointer rotate-0">
                   <img
                     class="w-[16px] cursor-pointer"
                     src="/icon/arrow.svg"
@@ -67,7 +67,7 @@
               <!-- submenu desktop -->
               <div
                 id="submenu-desktop"
-                class="cursor-pointer hover:text-md_black absolute px-1 py-1 top-8 flex flex-col gap-2 w-[200px] font-light text-[16px] bg-white border-submenu">
+                class="shadow-md cursor-pointer hover:text-md_black absolute px-1 py-1 top-8 flex flex-col gap-2 w-[200px] font-light text-[16px] bg-white border-submenu">
                 <a href=""
                   ><h6 class="px-2 py-1 submenu-desktop-bg">Podcast</h6></a
                 >
@@ -112,7 +112,7 @@
     </nav>
     <!-- nav mobile -->
     <nav
-      class="md:hidden w-full h-[64px] px-4 py-1 justify-between flex bg-white border-bottom items-center fixed top-0">
+      class="md:hidden w-full h-[64px] px-4 py-1 justify-between flex bg-white border-bottom items-center fixed top-0 z-50">
       <img class="h-[40px]" src="/logo/md_icon.svg" alt="logo" />
       <div id="hamburger_menu">
         <div class="hamburger_line"></div>
@@ -123,7 +123,7 @@
     <!-- nav mobile sidebar -->
     <nav
       id="sideNavbar"
-      class="sidenavClose md:hidden w-[240px] h-screen bg-white top-0 fixed flex items-start flex-col px-4 py-5 border-right">
+      class="sidenavClose md:hidden w-[240px] h-screen bg-white top-0 fixed flex items-start flex-col px-4 py-5 border-right z-100">
       <img class="h-[64px]" src="/logo/md_icon.svg" alt="logo" />
       <div class="h-full flex flex-col justify-between">
         <div
@@ -185,16 +185,227 @@
     </nav>
 
     <!-- *********************CONTENT******************** !-->
-    <!-- content section -->
-    <div class="mt-[64px] px-4 md:mt-[84px] md:px-6 lg:mt-[96px]">
-      <!-- *********************SWIPER MAIN******************** !-->
-      <div class="lg:max-w-[1440px] lg:mx-auto">
-        <h1>SWIPER MAIN</h1>
-        <h1>SWIPER MAIN</h1>
-        <h1>SWIPER MAIN</h1>
-        <h1>SWIPER MAIN</h1>
+    <!-- *******MAIN SWIPER***** !-->
+    <section class="mt-[64px] md:mt-[84px] lg:px-6 lg:mt-[96px] w-full">
+      <div
+        class="lg:max-w-[1440px] lg:mx-auto relative flex items-center justify-center">
+        <!-- NAVIGATE BTN -->
+        <div
+          class="hidden w-full max-w-[960px] absolute z-40 mx-auto lg:flex px-10 justify-between">
+          <div
+            id="navigate-slider-prev"
+            class="prev w-[42px] h-[42px] bg-white rounded-full flex items-center justify-center shadow-md">
+            <img class="rotate-90" src="/icon/arrow.svg" alt="PV" />
+          </div>
+          <div
+            id="navigate-slider-next"
+            class="next w-[42px] h-[42px] bg-white rounded-full flex items-center justify-center shadow-md">
+            <img class="-rotate-90" src="/icon/arrow.svg" alt="NX" />
+          </div>
+        </div>
+        <!-- SLIDER CARD -->
+        <div class="swiper homeSwiper">
+          <div class="swiper-wrapper">
+            <!-- SLIDER 1 -->
+            <div class="swiper-slide max-w-[960px] relative">
+              <img
+                class="min-h-[320px] object-cover"
+                src="images/Test1.jpg"
+                alt="" />
+              <!-- OVERLAY TEXT -->
+              <div
+                class="absolute bottom-0 flex made_slide_overlay items-end w-full h-[70%] md:h-[60%]">
+                <div
+                  class="w-full h-[70%] justify-end pb-8 bp_text_sm:pb-6 md:pb-16 bp_text_sm:h-[50%] bp_text_md:h-[70%] flex flex-col gap-3 px-3 bp_text_sm:px-6 md:px-10">
+                  <!-- TAG -->
+                  <div
+                    class="bg-white w-fit px-4 py-1 rounded-2xl items-center justify-center flex">
+                    <h6
+                      class="text-[12px] text-md_darkblue md:text-[16px] font-semibold">
+                      SOCIAL NEWS
+                    </h6>
+                  </div>
+                  <!-- TITLE -->
+                  <h6
+                    class="text-white font-semibold text-[20px] md:text-[28px]">
+                    ECC เสาหลักที่ช่วยให้โลกดิจิทัลอยู่ได้โดยไม่ Error
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <!-- SLIDER 2 -->
+            <div class="swiper-slide max-w-[960px] relative">
+              <img
+                class="min-h-[320px] object-cover"
+                src="images/Test1.jpg"
+                alt="" />
+              <!-- OVERLAY TEXT -->
+              <div
+                class="absolute bottom-0 flex made_slide_overlay items-end w-full h-[70%] md:h-[60%]">
+                <div
+                  class="w-full h-[70%] justify-end pb-8 bp_text_sm:pb-6 md:pb-16 bp_text_sm:h-[50%] bp_text_md:h-[70%] flex flex-col gap-3 px-3 bp_text_sm:px-6 md:px-10">
+                  <!-- TAG -->
+                  <div
+                    class="bg-white w-fit px-4 py-1 rounded-2xl items-center justify-center flex">
+                    <h6
+                      class="text-[12px] text-md_darkblue md:text-[16px] font-semibold">
+                      SOCIAL NEWS
+                    </h6>
+                  </div>
+                  <!-- TITLE -->
+                  <h6
+                    class="text-white font-semibold text-[20px] md:text-[28px]">
+                    ECC เสาหลักที่ช่วยให้โลกดิจิทัลอยู่ได้โดยไม่ Error
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <!-- SLIDER 3 -->
+            <div class="swiper-slide max-w-[960px] relative">
+              <img
+                class="min-h-[320px] object-cover"
+                src="images/Test1.jpg"
+                alt="" />
+              <!-- OVERLAY TEXT -->
+              <div
+                class="absolute bottom-0 flex made_slide_overlay items-end w-full h-[70%] md:h-[60%]">
+                <div
+                  class="w-full h-[70%] justify-end pb-8 bp_text_sm:pb-6 md:pb-16 bp_text_sm:h-[50%] bp_text_md:h-[70%] flex flex-col gap-3 px-3 bp_text_sm:px-6 md:px-10">
+                  <!-- TAG -->
+                  <div
+                    class="bg-white w-fit px-4 py-1 rounded-2xl items-center justify-center flex">
+                    <h6
+                      class="text-[12px] text-md_darkblue md:text-[16px] font-semibold">
+                      SOCIAL NEWS
+                    </h6>
+                  </div>
+                  <!-- TITLE -->
+                  <h6
+                    class="text-white font-semibold text-[20px] md:text-[28px]">
+                    ECC เสาหลักที่ช่วยให้โลกดิจิทัลอยู่ได้โดยไม่ Error
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <!-- SLIDER 4 -->
+            <div class="swiper-slide max-w-[960px] relative">
+              <img
+                class="min-h-[320px] object-cover"
+                src="images/Test1.jpg"
+                alt="" />
+              <!-- OVERLAY TEXT -->
+              <div
+                class="absolute bottom-0 flex made_slide_overlay items-end w-full h-[70%] md:h-[60%]">
+                <div
+                  class="w-full h-[70%] justify-end pb-8 bp_text_sm:pb-6 md:pb-16 bp_text_sm:h-[50%] bp_text_md:h-[70%] flex flex-col gap-3 px-3 bp_text_sm:px-6 md:px-10">
+                  <!-- TAG -->
+                  <div
+                    class="bg-white w-fit px-4 py-1 rounded-2xl items-center justify-center flex">
+                    <h6
+                      class="text-[12px] text-md_darkblue md:text-[16px] font-semibold">
+                      SOCIAL NEWS
+                    </h6>
+                  </div>
+                  <!-- TITLE -->
+                  <h6
+                    class="text-white font-semibold text-[20px] md:text-[28px]">
+                    ECC เสาหลักที่ช่วยให้โลกดิจิทัลอยู่ได้โดยไม่ Error
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- NAVIGATION DOT -->
+      <div
+        class="lg:max-w-[1440px] lg:mx-auto relative flex items-center justify-center py-3">
+        <div
+          class="swiper-pagination flex items-center justify-center mt-5"></div>
+      </div>
+    </section>
+
+    <!-- *******SOCIAL NEWS***** !-->
+    <div class="w-full mt-8 mb-8 flex justify-center">
+      <div class="relative flex flex-col items-center">
+        <h1 class="font-bold text-[22px] tracking-widest">SOCIAL NEWS</h1>
+        <div class="h-2 -z-20 w-[56px] bottom-0 made_pink_gradient"></div>
       </div>
     </div>
+    <section class="px-4 w-full">
+      <!-- CARD SOCIALS NEW -->
+      <div class="">
+        <img src="/images/Test1.jpg" alt="" />
+        <!-- TITILT A DESC -->
+        <div class="p-2 midstage:p-4 flex flex-col gap-2">
+          <h1 class="text-[18px] font-medium">
+            ECC เสาหลักที่ช่วยให้โลกดิจิทัลอยู่ได้โดยไม่ Error
+          </h1>
+          <h6
+            class="text-[16px] midstage:text-[16px] font-light card_preview_title">
+            ในฐานะของคนที่เกิดในช่วงรอยต่อระหว่างยุคอินเทอร์เน็ตดั้งเดิมและเทคโนโลยีสมัยใหม่กับเน็ตไฟเบอร์ความเร็วสูงของ
+            GenZ ก็คงไม่ใช่เรื่องแปลกอะไรที่ช่วงหนึ่งผมจะมี
+            โอกาสได้เล่นอยู่กับวัตถุสำหรับเก็บข้อมูลชนิดหนึ่งที่แบกโลกเอาไว้ได้ไม่ต่างจากที่คนยุคก่อนหน้ามีเทปและฟลอปปีดิสก์ใช้กันอยู่นานหลายปี 
+            วัตถุที่ว่านั้นคือ ออปติคัลดิสก์ ตั้งแต่ Compact Disk (CD), Digital
+            Video Disc / Digital Versatile Disc (DVD) และ Blu-ray Disc (BD)
+            ที่มาในช่วงปิดเกมพอดี (ช่วง ค.ศ. 2010)
+            ไม่กี่ปีก่อนที่โลกจะเข้าสู่ยุคออนไลน์อย่างเต็มรูปแบบหลังจากนั้น
+            ทำให้ระบบเก็บข้อมูลเหล่านี้จำต้องค่อยๆ
+            เลือนหายไปอย่างหลีกเลี่ยงไม่ได้
+          </h6>
+        </div>
+      </div>
+    </section>
+    <!-- *******Opinion***** !-->
+    <div class="w-full mt-8 mb-8 flex justify-center">
+      <div class="relative flex flex-col items-center">
+        <h1 class="font-bold text-[22px] tracking-widest">OPINION</h1>
+        <div class="h-2 -z-20 w-[56px] bottom-0 made_pink_gradient"></div>
+      </div>
+    </div>
+
+    <!-- *********************FOOTER******************** !-->
+    <!-- footer Desktop -->
+    <footer
+      class="hidden md:block w-full px-4 items-center bg-white justify-center gap-3 mt-10 py-8">
+      <div>
+        <img class="h-[40px]" src="/logo/md_icon.svg" alt="logo" />
+      </div>
+    </footer>
+    <!-- footer mobile -->
+    <footer
+      class="md:hidden w-full px-4 flex items-center bg-white justify-center flex-col gap-3 mt-10 py-8">
+      <h6 class="font-semibold text-[18px]">Home</h6>
+      <h6 class="font-semibold text-[18px]">Social News</h6>
+      <h6 class="font-semibold text-[18px]">Ma-De Channel</h6>
+      <h6 class="font-semibold text-[18px]">PR & Events</h6>
+      <h6 class="font-semibold text-[18px]">About</h6>
+
+      <div id="devider" class="w-full"></div>
+      <h6 class="font-semibold text-[18px]">All Social</h6>
+      <div class="flex gap-6">
+        <a href=""><img class="w-[26px]" src="icon/b_facebook.svg" alt="" /></a>
+        <a href=""><img class="w-[26px]" src="icon/b_ig.svg" alt="" /></a>
+        <a href=""><img class="w-[26px]" src="icon/b_x.svg" alt="" /></a>
+      </div>
+      <h6 class="font-semibold text-[18px]">All Content</h6>
+      <div class="flex gap-6">
+        <a href=""><img class="w-[26px]" src="icon/c_youtube.svg" alt="" /></a>
+        <a href=""><img class="w-[26px]" src="icon/c_spotify.svg" alt="" /></a>
+        <a href=""><img class="w-[26px]" src="icon/c_joox.svg" alt="" /></a>
+        <a href=""><img class="w-[26px]" src="icon/c_ggpod.svg" alt="" /></a>
+      </div>
+      <div id="devider" class="w-full"></div>
+      <h6 class="font-semibold text-center">
+        ภาควิชาการสื่อสารมวลชน<br />
+        คณะนิเทศศาสตร์ <br />
+        จุฬาลงกรณ์มหาวิทยาลัย
+      </h6>
+
+      <h6 class="text-[12px] font-light text-center">
+        Copyright © 2024 Ma-De Space | Powered by Ma-De Space
+      </h6>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>

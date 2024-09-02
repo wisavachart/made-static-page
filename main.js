@@ -4,14 +4,6 @@ import MadeChannelApp from "./src/madeChannelSection";
 
 initialApp();
 function initialApp() {
+  new Slider();
   new NavBar();
 }
-
-// class Main {
-//   constructor() {
-//     // new Slider();
-//     new NavBar();
-//     // new MadeChannelApp();
-//   }
-// }
-// new Main();

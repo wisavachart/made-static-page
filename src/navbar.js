@@ -55,6 +55,7 @@ class NavBar {
   _onArrowClick() {
     this.isSubDeskTopOpen = !this.isSubDeskTopOpen;
     this.animateButton(this._arrow);
+    this.animateArrowDesktop();
     this._renderSubMenuDeskTop();
   }
   _renderSubMenuDeskTop() {
@@ -161,6 +162,13 @@ class NavBar {
     gsap.to(this.submeMudesktop, {
       opacity: 0,
       ease: "power4.in",
+      duration: 0.2,
+    });
+  }
+  animateArrowDesktop() {
+    gsap.to(this._arrow, {
+      rotate: !this.isSubDeskTopOpen ? 0 : -180,
+      ease: "power2.inOut",
       duration: 0.2,
     });
   }
