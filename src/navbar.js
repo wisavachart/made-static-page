@@ -28,17 +28,18 @@ class NavBar {
       this._hamburgerMenuClick.bind(this)
     );
     this._sidebarMenuItem.forEach((menuItem) =>
-      menuItem.addEventListener("click", () => {
+      menuItem.addEventListener("click", (e) => {
+        e.preventDefault();
         this.animateMenuList(menuItem);
         setTimeout(() => {
           this._clearAfterClick();
         }, 400);
       })
     );
-    this._openSubMenuBtn.addEventListener(
-      "click",
-      this._subMenuBtnCilck.bind(this)
-    );
+    this._openSubMenuBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      this._subMenuBtnCilck();
+    });
 
     this._arrow.addEventListener("click", this._onArrowClick.bind(this));
   }

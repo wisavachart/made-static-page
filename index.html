@@ -14,6 +14,8 @@
     <title>Made space</title>
   </head>
   <body>
+    <!-- <div
+      class="bg-black opacity-80 w-full h-screen absolute top-0 left-0 z-40"></div> -->
     <!-- *********************NAV******************** !-->
     <!-- nav desktop / Tablet -->
     <nav
@@ -145,9 +147,10 @@
                 alt="" />
             </a>
           </div>
+          <!-- Mobile Sub nav -->
           <ul
             id="subMenu"
-            class="submenu-hide px-5 flex flex-col gap-3 text-[16px] font-light flex-shrink-0 overflow-hidden">
+            class="submenu-hide px-5 flex flex-col gap-4 text-[16px] font-light overflow-hidden">
             <a href="#"><li class="hover:font-medium">Podcast</li></a>
             <a href="#"><li class="hover:font-medium">In-Ear Cinema</li></a>
             <a href="#"
@@ -159,7 +162,6 @@
             <a href="#"> <li class="hover:font-medium">Documentary</li></a>
             <a href="#"><li class="hover:font-medium">Art of Design</li></a>
           </ul>
-
           <a href="#">
             <h6 class="sidebarMenuItem hover:font-normal">PR & Events</h6>
           </a>
@@ -210,7 +212,7 @@
             <div class="swiper-slide max-w-[960px] relative">
               <img
                 class="min-h-[320px] object-cover"
-                src="images/Test1.jpg"
+                src="images/test2.jpg"
                 alt="" />
               <!-- OVERLAY TEXT -->
               <div
@@ -226,9 +228,9 @@
                     </h6>
                   </div>
                   <!-- TITLE -->
-                  <h6
-                    class="text-white font-semibold text-[20px] md:text-[28px]">
-                    ECC เสาหลักที่ช่วยให้โลกดิจิทัลอยู่ได้โดยไม่ Error
+                  <h6 class="text-white font-medium text-[20px] md:text-[24px]">
+                    ศึกชิง ‘วิมานหนาม’ ที่ไม่ใช่เพียงเดิมพันแห่งชีวิต
+                    แต่ต้องแลกด้วยทุกอณูของจิตวิญญาณ
                   </h6>
                 </div>
               </div>
@@ -237,7 +239,7 @@
             <div class="swiper-slide max-w-[960px] relative">
               <img
                 class="min-h-[320px] object-cover"
-                src="images/Test1.jpg"
+                src="images/test3.jpg"
                 alt="" />
               <!-- OVERLAY TEXT -->
               <div
@@ -253,9 +255,9 @@
                     </h6>
                   </div>
                   <!-- TITLE -->
-                  <h6
-                    class="text-white font-semibold text-[20px] md:text-[28px]">
-                    ECC เสาหลักที่ช่วยให้โลกดิจิทัลอยู่ได้โดยไม่ Error
+                  <h6 class="text-white font-medium text-[20px] md:text-[24px]">
+                    JAM JAM Eatery & Bar เมื่ออาหารจีนมาผสมไทย
+                    จึงอยากชวนนักกินให้มาแจมกัน
                   </h6>
                 </div>
               </div>
@@ -280,8 +282,7 @@
                     </h6>
                   </div>
                   <!-- TITLE -->
-                  <h6
-                    class="text-white font-semibold text-[20px] md:text-[28px]">
+                  <h6 class="text-white font-medium text-[20px] md:text-[24px]">
                     ECC เสาหลักที่ช่วยให้โลกดิจิทัลอยู่ได้โดยไม่ Error
                   </h6>
                 </div>
@@ -307,8 +308,7 @@
                     </h6>
                   </div>
                   <!-- TITLE -->
-                  <h6
-                    class="text-white font-semibold text-[20px] md:text-[28px]">
+                  <h6 class="text-white font-medium text-[20px] md:text-[24px]">
                     ECC เสาหลักที่ช่วยให้โลกดิจิทัลอยู่ได้โดยไม่ Error
                   </h6>
                 </div>
@@ -326,22 +326,24 @@
     </section>
 
     <!-- *******SOCIAL NEWS***** !-->
-    <div class="w-full mt-8 mb-8 flex justify-center">
-      <div class="relative flex flex-col items-center">
-        <h1 class="font-bold text-[22px] tracking-widest">SOCIAL NEWS</h1>
+    <div
+      class="w-full max-w-[1140px] mt-8 mb-8 flex justify-center md:justify-start md:px-6 lg:mx-auto">
+      <div class="relative flex flex-col items-center md:items-start">
+        <h1 class="font-bold text-[20px] tracking-widest">SOCIAL NEWS</h1>
         <div class="h-2 -z-20 w-[56px] bottom-0 made_pink_gradient"></div>
       </div>
     </div>
-    <section class="px-4 w-full">
-      <!-- CARD SOCIALS NEW -->
-      <div class="">
-        <img src="/images/Test1.jpg" alt="" />
+    <section class="px-4 w-full flex flex-col gap-4">
+      <!-- CARD SOCIALS Big Card -->
+      <div id="card-border" class="">
+        <img src="/images/test3.jpg" alt="" />
         <!-- TITILT A DESC -->
         <div class="p-2 midstage:p-4 flex flex-col gap-2">
           <h1 class="text-[18px] font-medium">
-            ECC เสาหลักที่ช่วยให้โลกดิจิทัลอยู่ได้โดยไม่ Error
+            JAM JAM Eatery & Bar เมื่ออาหารจีนมาผสมไทย
+            จึงอยากชวนนักกินให้มาแจมกัน
           </h1>
-          <h6
+          <!-- <h6
             class="text-[16px] midstage:text-[16px] font-light card_preview_title">
             ในฐานะของคนที่เกิดในช่วงรอยต่อระหว่างยุคอินเทอร์เน็ตดั้งเดิมและเทคโนโลยีสมัยใหม่กับเน็ตไฟเบอร์ความเร็วสูงของ
             GenZ ก็คงไม่ใช่เรื่องแปลกอะไรที่ช่วงหนึ่งผมจะมี
@@ -352,14 +354,37 @@
             ไม่กี่ปีก่อนที่โลกจะเข้าสู่ยุคออนไลน์อย่างเต็มรูปแบบหลังจากนั้น
             ทำให้ระบบเก็บข้อมูลเหล่านี้จำต้องค่อยๆ
             เลือนหายไปอย่างหลีกเลี่ยงไม่ได้
-          </h6>
+          </h6> -->
+        </div>
+      </div>
+      <div id="card-border" class="">
+        <img src="/images/test2.jpg" alt="" />
+        <!-- TITILT A DESC -->
+        <div class="p-2 midstage:p-4 flex flex-col gap-2">
+          <h1 class="text-[18px] font-medium">
+            JAM JAM Eatery & Bar เมื่ออาหารจีนมาผสมไทย
+            จึงอยากชวนนักกินให้มาแจมกัน
+          </h1>
+          <!-- <h6
+            class="text-[16px] midstage:text-[16px] font-light card_preview_title">
+            ในฐานะของคนที่เกิดในช่วงรอยต่อระหว่างยุคอินเทอร์เน็ตดั้งเดิมและเทคโนโลยีสมัยใหม่กับเน็ตไฟเบอร์ความเร็วสูงของ
+            GenZ ก็คงไม่ใช่เรื่องแปลกอะไรที่ช่วงหนึ่งผมจะมี
+            โอกาสได้เล่นอยู่กับวัตถุสำหรับเก็บข้อมูลชนิดหนึ่งที่แบกโลกเอาไว้ได้ไม่ต่างจากที่คนยุคก่อนหน้ามีเทปและฟลอปปีดิสก์ใช้กันอยู่นานหลายปี 
+            วัตถุที่ว่านั้นคือ ออปติคัลดิสก์ ตั้งแต่ Compact Disk (CD), Digital
+            Video Disc / Digital Versatile Disc (DVD) และ Blu-ray Disc (BD)
+            ที่มาในช่วงปิดเกมพอดี (ช่วง ค.ศ. 2010)
+            ไม่กี่ปีก่อนที่โลกจะเข้าสู่ยุคออนไลน์อย่างเต็มรูปแบบหลังจากนั้น
+            ทำให้ระบบเก็บข้อมูลเหล่านี้จำต้องค่อยๆ
+            เลือนหายไปอย่างหลีกเลี่ยงไม่ได้
+          </h6> -->
         </div>
       </div>
     </section>
     <!-- *******Opinion***** !-->
-    <div class="w-full mt-8 mb-8 flex justify-center">
-      <div class="relative flex flex-col items-center">
-        <h1 class="font-bold text-[22px] tracking-widest">OPINION</h1>
+    <div
+      class="w-full max-w-[1140px] mt-8 mb-8 flex justify-center md:justify-start md:px-6 lg:mx-auto">
+      <div class="relative flex flex-col items-center md:items-start">
+        <h1 class="font-bold text-[20px] tracking-widest">OPINION</h1>
         <div class="h-2 -z-20 w-[56px] bottom-0 made_pink_gradient"></div>
       </div>
     </div>
@@ -396,7 +421,7 @@
         <a href=""><img class="w-[26px]" src="icon/c_ggpod.svg" alt="" /></a>
       </div>
       <div id="devider" class="w-full"></div>
-      <h6 class="font-semibold text-center">
+      <h6 class="font-light text-center">
         ภาควิชาการสื่อสารมวลชน<br />
         คณะนิเทศศาสตร์ <br />
         จุฬาลงกรณ์มหาวิทยาลัย
