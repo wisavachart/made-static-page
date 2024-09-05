@@ -12,6 +12,8 @@ class NavBar {
     this.isSubDeskTopOpen = false;
     this._arrow = document.getElementById("arrow");
     this.submeMudesktop = document.getElementById("submenu-desktop");
+    this.isOverlay = false;
+    this.overlay = document.getElementById("overlay-wrapper");
     this.addEventListener();
   }
 
@@ -68,7 +70,10 @@ class NavBar {
   //MOBILE NAV METHOD
   _hamburgerMenuClick() {
     this.isOpen = !this.isOpen;
+    this.isOverlay = !this.isOverlay;
+    document.body.classList.toggle("no-scroll");
     this._renderSideNavbar();
+    this._renderOverlay();
     this.animateButton(this._hamburger);
   }
 
@@ -81,7 +86,9 @@ class NavBar {
     this.animateOpenSubBtn();
     this._renderSubMenu();
   }
-
+  _renderOverlay() {
+    !this.isOverlay ? this.animateOverlayOut() : this.animateOverlayIn();
+  }
   _renderSideNavbar() {
     !this.isOpen ? this.animateOut() : this.animateIn();
   }
@@ -90,6 +97,24 @@ class NavBar {
   }
 
   //ANIMATION METHOD
+  animateOverlayIn() {
+    this.overlay.style.display = "block";
+    gsap.to(this.overlay, {
+      opacity: 0.8,
+      ease: "power2.in",
+      duration: 0.2,
+    });
+  }
+  animateOverlayOut() {
+    gsap.to(this.overlay, {
+      opacity: 0,
+      ease: "power2.in",
+      duration: 0.2,
+      onComplete: () => {
+        this.overlay.style.display = "none";
+      },
+    });
+  }
   animateIn() {
     gsap.to(this._SideNavbar, {
       x: 0,

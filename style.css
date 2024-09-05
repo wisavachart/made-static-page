@@ -45,6 +45,14 @@ body {
 }
 
 /* MENU ANIMATION */
+.no-scroll {
+  overflow: hidden;
+}
+
+#overlay-wrapper {
+  display: none;
+  opacity: 0;
+}
 
 #submenu-desktop {
   opacity: 0;
