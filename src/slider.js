@@ -32,6 +32,10 @@ class Slider {
       centeredSlides: true,
       loop: true,
       spaceBetween: 14,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
