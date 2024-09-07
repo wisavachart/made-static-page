@@ -7,6 +7,7 @@ export default {
         mb_s: "320px",
         mb_m: "375px",
         mb_L: "425px",
+        mb_L_550: "550px",
       },
       colors: {
         md_gray: "#D1D1D1",

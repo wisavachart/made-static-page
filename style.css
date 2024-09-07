@@ -210,8 +210,14 @@ body {
   overflow: hidden;
 }
 
-@media screen and (max-width: 773px) {
+@media screen and (max-width: 549px) {
   .card_preview_title {
     -webkit-line-clamp: 2;
+  }
+}
+
+@media screen and (min-width: 549px) {
+  .truncateText {
+    -webkit-line-clamp: 4;
   }
 }
