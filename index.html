@@ -128,26 +128,31 @@
     <nav
       id="sideNavbar"
       class="sidenavClose md:hidden w-[240px] h-screen bg-white top-0 fixed flex items-start flex-col px-4 py-5 border-right z-100">
-      <img class="h-[64px]" src="/logo/md_icon.svg" alt="logo" />
-      <div class="h-full flex flex-col justify-between">
+      <div class="w-full flex justify-center">
+        <img class="h-[64px]" src="/logo/md_icon.svg" alt="logo" />
+      </div>
+      <div class="h-full flex flex-col w-full">
         <div
-          class="mt-10 flex flex-col gap-2 text-[20px] font-normal text-md_grey_menu">
+          class="mt-10 flex flex-col gap-2 text-[16px] font-normal text-md_grey_menu">
           <a href="#">
             <h6 class="sidebarMenuItem hover:font-normal">Home</h6>
           </a>
+          <div id="devider" class="w-full"></div>
           <a href="#">
             <h6 class="sidebarMenuItem hover:font-normal">Social news</h6>
           </a>
-
-          <div class="flex flex-col">
+          <div id="devider" class="w-full"></div>
+          <div class="flex justify-between items-center">
             <a class="flex gap-4" href="#">
-              <h6 class="sidebarMenuItem hover:font-normal">Ma-De Channel</h6>
-              <img
-                id="open-sub"
-                class="w-[28px] -rotate-90"
-                src="/icon/chavron.svg"
-                alt="" />
-            </a>
+              <h6 class="sidebarMenuItem hover:font-normal">
+                Ma-De Channel
+              </h6></a
+            >
+            <img
+              id="open-sub"
+              class="w-[28px] -rotate-90"
+              src="/icon/chavron.svg"
+              alt="" />
           </div>
           <!-- Mobile Sub nav -->
           <ul
@@ -164,12 +169,15 @@
             <a href="#"> <li class="hover:font-medium">Documentary</li></a>
             <a href="#"><li class="hover:font-medium">Art of Design</li></a>
           </ul>
+          <div id="devider" class="w-full"></div>
           <a href="#">
             <h6 class="sidebarMenuItem hover:font-normal">PR & Events</h6>
           </a>
+          <div id="devider" class="w-full"></div>
           <a href="#"><h6 class="sidebarMenuItem">About</h6></a>
+          <div id="devider" class="w-full"></div>
         </div>
-        <div class="pb-6 flex flex-col gap-4">
+        <div class="pb-6 flex flex-col gap-4 items-center mt-4">
           <div class="flex items-center gap-4">
             <a href="">
               <img class="w-[24px]" src="icon/b_facebook.svg" alt=""
@@ -180,7 +188,7 @@
               <img class="w-[24px]" src="icon/b_youtube.svg" alt=""
             /></a>
           </div>
-          <p class="text-[10px] font-light">
+          <p class="desc-color text-[10px] font-light text-center">
             Copyright © 2024 Ma-De Space <br />
             Powered by Ma-De Space
           </p>
@@ -331,7 +339,7 @@
     <div
       class="w-full max-w-[1140px] mt-8 mb-8 flex justify-center md:justify-start md:px-6 lg:mx-auto">
       <div class="relative flex flex-col items-center md:items-start">
-        <h1 class="font-bold text-[20px]">SOCIAL NEWS</h1>
+        <h1 class="font-bold text-[20px] title-color">SOCIAL NEWS</h1>
         <div class="h-3 -z-20 w-[56px] bottom-0 made_pink_gradient"></div>
       </div>
     </div>
@@ -361,25 +369,24 @@
       </div>
       <!-- Mini Card Mobile-->
       <div class="flex flex-col gap-4">
-        <div class="flex w-full gap-3">
+        <div class="flex w-full gap-4">
           <img src="/images/mock6.jpg" class="h-[75px]" alt="" />
           <h6 class="truncateText max-h-[70px] title-color">
             ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้นเมืองกับพระเวท
             ที่อยู่เบื้องหลังสีผิวของวีรบุรุษในมหาภารตะ
           </h6>
         </div>
-        <div class="flex w-full gap-3">
+        <div class="flex w-full gap-4">
           <img src="/images/mock7.jpg" class="h-[75px]" alt="" />
           <h6 class="truncateText max-h-[70px] title-color">
-            ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้นเมืองกับพระเวท
-            ที่อยู่เบื้องหลังสีผิวของวีรบุรุษในมหาภารตะ
+            ‘เสร็จศึก ฆ่าขุนพล’ วันลอบสังหาร ดับทรอตสกี'
           </h6>
         </div>
-        <div class="flex w-full gap-3">
+        <div class="flex w-full gap-4">
           <img src="/images/mock8.jpg" class="h-[75px]" alt="" />
           <h6 class="truncateText max-h-[70px] title-color">
-            ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้นเมืองกับพระเวท
-            ที่อยู่เบื้องหลังสีผิวของวีรบุรุษในมหาภารตะ
+            หัวใจที่ผิดหวังถูกเยียวยาให้เต้นแรงอีกครั้ง ใน ‘HAPPINESS : My Dear,
+            ReVe1uv’ กับการกลับมาในรอบ 6 ปีของ Red Velvet
           </h6>
         </div>
       </div>
@@ -389,7 +396,7 @@
     <div
       class="w-full max-w-[1140px] mt-8 mb-8 flex justify-center md:justify-start md:px-6 lg:mx-auto">
       <div class="relative flex flex-col items-center md:items-start">
-        <h1 class="font-bold text-[20px]">OPINION</h1>
+        <h1 class="font-bold text-[20px] title-color">OPINION</h1>
         <div class="h-3 -z-20 w-[56px] bottom-0 made_pink_gradient"></div>
       </div>
     </div>
@@ -573,13 +580,13 @@
         <a href=""><img class="w-[26px]" src="icon/c_ggpod.svg" alt="" /></a>
       </div>
       <div id="devider" class="w-full"></div>
-      <h6 class="font-light text-center text-[14px]">
+      <h6 class="font-light text-center text-[12px] desc-color">
         ภาควิชาการสื่อสารมวลชน<br />
         คณะนิเทศศาสตร์ <br />
         จุฬาลงกรณ์มหาวิทยาลัย
       </h6>
 
-      <h6 class="text-[14px] font-light text-center">
+      <h6 class="text-[12px] font-light text-center desc-color">
         Copyright © 2024 Ma-De Space | Powered by Ma-De Space
       </h6>
     </footer>
