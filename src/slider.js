@@ -1,5 +1,5 @@
 class Slider {
-  constructor() {
+  constructor(pathName) {
     this.navigate_slider_prev = document.getElementById("navigate-slider-prev");
     this.navigate_slider_next = document.getElementById("navigate-slider-next");
     this._homePagePinPostHighlightSlider();
