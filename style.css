@@ -41,6 +41,13 @@ body {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(4, 21, 69) 100%);
 }
 .made-blue-gradient {
+  background: rgb(25, 94, 203);
+  background: linear-gradient(
+    142deg,
+    rgba(25, 94, 203, 1) 0%,
+    rgba(16, 66, 163, 1) 74%,
+    rgba(6, 34, 115, 1) 100%
+  );
 }
 
 .title-color-white {
