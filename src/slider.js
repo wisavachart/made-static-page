@@ -49,7 +49,7 @@ class Slider {
   _recentPostSocialsNewSwiper() {
     new Swiper(".recentSwiper", {
       slidesPerView: 2,
-      spaceBetween: 16,
+      spaceBetween: 24,
     });
   }
   // _recentPostSlider() {
