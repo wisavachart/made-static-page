@@ -38,7 +38,11 @@ body {
 
 .made_slide_overlay {
   background: rgb(0, 0, 0);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(4, 21, 69) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgb(5, 36, 129) 100%
+  );
 }
 .made-blue-gradient {
   background: rgb(25, 94, 203);

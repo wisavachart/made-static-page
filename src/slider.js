@@ -1,10 +1,10 @@
 class Slider {
-  constructor(pathName) {
+  constructor() {
     this.navigate_slider_prev = document.getElementById("navigate-slider-prev");
     this.navigate_slider_next = document.getElementById("navigate-slider-next");
     this._homePagePinPostHighlightSlider();
+    this._recentPostSocialsNewSwiper();
     this.addEvent();
-    // this._recentPostSlider();
   }
 
   addEvent() {
@@ -44,6 +44,12 @@ class Slider {
         nextEl: ".next",
         prevEl: ".prev",
       },
+    });
+  }
+  _recentPostSocialsNewSwiper() {
+    new Swiper(".recentSwiper", {
+      slidesPerView: 2,
+      spaceBetween: 16,
     });
   }
   // _recentPostSlider() {
