@@ -18,3 +18,12 @@ function adjustVH() {
   );
 }
 window.addEventListener("resize", adjustVH);
+
+// const menu = document.querySelectorAll(".made-ch-tag");
+// console.log(menu);
+
+// menu.forEach((item, index) => {
+//   item.addEventListener("click", () => {
+//     console.log(index);
+//   });
+// });

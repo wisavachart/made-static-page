@@ -116,7 +116,7 @@
     </nav>
     <!-- nav mobile -->
     <nav
-      class="md:hidden w-full h-[64px] mb_L_500:h-[84px] px-4 py-1 justify-between flex bg-white border-bottom items-center fixed top-0 z-50">
+      class="md:hidden w-full h-[64px] mb_L_500:h-[84px] px-6 py-1 justify-between flex bg-white border-bottom items-center fixed top-0 z-50">
       <img
         class="h-[40px] mb_L_500:h-[56px]"
         src="/logo/md_icon.svg"
@@ -238,9 +238,9 @@
                   class="w-full h-[70%] justify-end pb-8 flex flex-col gap-3 px-4 mb_L_500:px-8 mb_L_500:max-w-[550px] mb_L_500:mx-auto md:mx-0 md:max-w-full md:px-6 md:pb-16 lg:px-10">
                   <!-- TAG -->
                   <div
-                    class="bg-white w-fit px-4 py-1 rounded-2xl items-center justify-center flex">
+                    class="text-white bg-white bg-opacity-40 w-fit px-4 py-1 rounded-2xl items-center justify-center flex">
                     <h6
-                      class="text-[12px] text-md_darkblue md:text-[16px] font-semibold">
+                      class="text-[12px] md:text-[16px] font-semibold leading-snug">
                       SOCIAL NEWS
                     </h6>
                   </div>
@@ -617,6 +617,12 @@
       <!-- NAVIGATION DOT RECENT -->
       <div
         class="swiper-pagination-recent flex items-center justify-center mt-2"></div>
+      <div class="flex justify-center mt-10">
+        <div
+          class="flex items-center justify-center leading-snug btn-border font-semibold text-md_darkblue text-[16px] rounded-full px-8 py-1">
+          <h1>MORE</h1>
+        </div>
+      </div>
     </section>
     <!-- *********************** !-->
     <!-- *********************** !-->
@@ -625,7 +631,7 @@
     <!-- *********************** !-->
     <!-- *******SOCIAL NEWS MOBILE***** !-->
     <section
-      class="md:hidden px-4 mb_L_500:px-8 mt-2 w-full flex flex-col gap-10 mb_L:gap-8 pb-8 mb_L_500:mx-auto mb_L_500:max-w-[500px] pt-6">
+      class="md:hidden px-6 mb_L_500:px-8 mt-2 w-full flex flex-col gap-10 mb_L:gap-8 pb-8 mb_L_500:mx-auto mb_L_500:max-w-[500px] pt-6">
       <div class="relative flex flex-col items-center md:items-start">
         <h1 class="font-bold text-[24px] title-color">SOCIAL NEWS</h1>
       </div>
@@ -692,10 +698,10 @@
         src="/texture/grain.png"
         alt="" />
       <div
-        class="z-10 relative md:hidden px-4 mb_L_500:px-8 mt-2 w-full flex flex-col gap-10 mb_L:gap-8 pb-8 mb_L_500:mx-auto mb_L_500:max-w-[500px] pt-6">
+        class="z-10 relative md:hidden px-6 mb_L_500:px-8 mt-2 w-full flex flex-col gap-10 mb_L:gap-8 pb-8 mb_L_500:mx-auto mb_L_500:max-w-[500px] pt-6">
         <div class="relative flex flex-col items-center md:items-start">
           <h1
-            class="font-bold text-[24px] title-color-white underline underline-offset-1">
+            class="font-bold text-[24px] title-color-white underline underline-offset-2">
             OPINION
           </h1>
         </div>
@@ -752,9 +758,9 @@
     <!-- *********************** !-->
     <!-- *********************** !-->
     <!-- *********************** !-->
-    <!-- *******RECENT Mobile ***** !-->
+    <!-- *******RECENT POST Mobile ***** !-->
     <section
-      class="md:hidden px-4 mb_L_500:px-8 w-full flex flex-col gap-6 mb_L:gap-8 pb-8 mb_L_500:mx-auto mb_L_500:max-w-[500px] pt-6">
+      class="md:hidden px-6 mb_L_500:px-8 w-full flex flex-col gap-6 mb_L:gap-8 pb-8 mb_L_500:mx-auto mb_L_500:max-w-[500px] pt-6">
       <div class="relative flex flex-col md:items-start">
         <h1 class="font-bold text-[20px] title-color">RECENT POST</h1>
       </div>
@@ -764,13 +770,15 @@
           <div class="swiper-slide max-w-[133.33px] mb_L:max-w-[151.1px]">
             <div class="flex flex-col gap-3">
               <img src="/images/mock1.jpg" alt="" />
-              <div class="flex flex-col gap-2">
-                <h6 class="desc-color font-light">social news</h6>
-                <h6
-                  class="tuncate-recent-mobile font-medium text-[14px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] title-color">
-                  ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้นเมืองกับพระเวท
-                  ที่อยู่เบื้องหลังสีผิวของวีรบุรุษในมหาภารตะ
-                </h6>
+              <div class="flex flex-col gap-1">
+                <h6 class="font-light text-md_darkblue">social news</h6>
+                <div>
+                  <h6
+                    class="line-clamp-2 font-medium text-[14px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] title-color">
+                    ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้นเมืองกับพระเวท
+                    ที่อยู่เบื้องหลังสีผิวของวีรบุรุษในมหาภารตะ
+                  </h6>
+                </div>
               </div>
             </div>
           </div>
@@ -778,12 +786,14 @@
           <div class="swiper-slide max-w-[133.33px] mb_L:max-w-[151.1px]">
             <div class="flex flex-col gap-3">
               <img src="/images/mock8.jpg" alt="" />
-              <div class="flex flex-col gap-2">
-                <h6 class="desc-color font-light">opinion</h6>
-                <h6
-                  class="tuncate-recent-mobile font-medium text-[14px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] title-color">
-                  ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้น
-                </h6>
+              <div class="flex flex-col gap-1">
+                <h6 class="text-md_darkblue font-light">opinion</h6>
+                <div>
+                  <h6
+                    class="line-clamp-2 font-medium text-[14px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] title-color">
+                    ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้นasd
+                  </h6>
+                </div>
               </div>
             </div>
           </div>
@@ -791,12 +801,14 @@
           <div class="swiper-slide max-w-[133.33px] mb_L:max-w-[151.1px]">
             <div class="flex flex-col gap-3">
               <img src="/images/mock3.jpg" alt="" />
-              <div class="flex flex-col gap-2">
-                <h6 class="desc-color font-light">opinion</h6>
-                <h6
-                  class="tuncate-recent-mobile font-medium text-[14px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] title-color">
-                  ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้น
-                </h6>
+              <div class="flex flex-col gap-1">
+                <h6 class="text-md_darkblue font-light">opinion</h6>
+                <div>
+                  <h6
+                    class="line-clamp-2 font-medium text-[14px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] title-color">
+                    ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้นasdasd
+                  </h6>
+                </div>
               </div>
             </div>
           </div>
@@ -804,25 +816,29 @@
           <div class="swiper-slide max-w-[133.33px] mb_L:max-w-[151.1px]">
             <div class="flex flex-col gap-3">
               <img src="/images/mock4.jpg" alt="" />
-              <div class="flex flex-col gap-2">
-                <h6 class="desc-color font-light">opinion</h6>
-                <h6
-                  class="tuncate-recent-mobile font-medium text-[14px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] title-color">
-                  ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้น
-                </h6>
+              <div class="flex flex-col gap-1">
+                <h6 class="text-md_darkblue font-light">opinion</h6>
+                <div>
+                  <h6
+                    class="line-clamp-2 font-medium text-[14px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] title-color">
+                    ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้นasd
+                  </h6>
+                </div>
               </div>
             </div>
           </div>
-          <!-- RECENT 6 -->
+          <!-- RECENT 5 -->
           <div class="swiper-slide max-w-[133.33px] mb_L:max-w-[151.1px]">
             <div class="flex flex-col gap-3">
               <img src="/images/mock5.jpg" alt="" />
-              <div class="flex flex-col gap-2">
-                <h6 class="desc-color font-light">opinion</h6>
-                <h6
-                  class="tuncate-recent-mobile font-medium text-[14px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] title-color">
-                  ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้น
-                </h6>
+              <div class="flex flex-col gap-1">
+                <h6 class="text-md_darkblue font-light">opinion</h6>
+                <div>
+                  <h6
+                    class="line-clamp-2 font-medium text-[14px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] title-color">
+                    ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้น
+                  </h6>
+                </div>
               </div>
             </div>
           </div>
@@ -830,12 +846,14 @@
           <div class="swiper-slide max-w-[133.33px] mb_L:max-w-[151.1px]">
             <div class="flex flex-col gap-3">
               <img src="/images/mock6.jpg" alt="" />
-              <div class="flex flex-col gap-2">
+              <div class="flex flex-col gap-1">
                 <h6 class="desc-color font-light">opinion</h6>
-                <h6
-                  class="tuncate-recent-mobile font-medium text-[14px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] title-color">
-                  ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้น
-                </h6>
+                <div>
+                  <h6
+                    class="line-clamp-2 font-medium text-[14px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] title-color">
+                    ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้น
+                  </h6>
+                </div>
               </div>
             </div>
           </div>
@@ -855,48 +873,65 @@
     <!-- *********************** !-->
     <!-- *****************************************************SECTION 2****************************************************** !-->
     <!-- *******MADE CHANNEL MOBILE AND DESKTOP***** !-->
-    <section class="pb-8 made-channel2 relative bg-black">
-      <!-- HEADER -->
-      <div class="relative z-10 flex flex-col items-center md:items-start">
-        <h1 class="font-bold text-[24px] title-color-white my-8">
+    <section
+      class="pb-8 made-channel2 relative md:mt-16 lg:max-w-[1440px] lg:mx-auto">
+      <!-- HEADER MOBILE -->
+      <div class="relative z-10 flex flex-col items-center">
+        <h1
+          class="md:hidden font-bold text-[24px] title-color-white my-8 underline underline-offset-2">
           Ma-De CHANNEL
         </h1>
       </div>
+      <!-- HEADER TABLED DESKTOP -->
+      <div
+        class="hidden md:flex relative px-8 w-full gap-10 mx-auto max-w-[880px] lg:max-w-[1200px] lg:px-0 mb-8">
+        <img class="" src="/logo/md_banner.svg" alt="" />
+
+        <div
+          class="hidden md:flex flex-col absolute top-[25%] lg:top-[33%] lg:left-[10%] text-white">
+          <h1 class="font-bold text-[36px] leading-snug">Ma-De</h1>
+          <h1 class="font-bold text-[36px] leading-snug">CHANNEL</h1>
+        </div>
+      </div>
+
       <!-- SCETION -->
       <div
-        class="relative z-10 px-6 mb_L_500:px-8 w-full flex flex-col gap-10 mb_L:gap-8 mb_L_500:mx-auto mb_L_500:max-w-[500px]">
+        class="relative z-10 px-6 mb_L_500:px-8 w-full flex flex-col gap-10 lg:gap-12 mb_L:gap-8 mb_L_500:mx-auto mb_L_500:max-w-[500px] md:max-w-[880px] lg:max-w-[960px] lg:px-0 md:mb-20 lg:mt-12">
         <!-- TAG Wrapper -->
-        <div class="flex flex-wrap gap-4 text-[14px]">
+        <div
+          class="flex flex-wrap gap-4 text-[14px] md:text-[16px] md:w-full md:justify-center">
           <!-- TAG Item -->
+
           <div
-            class="tag rounded-full px-4 py-1 text-white bg-white bg-opacity-20">
+            class="tag made-ch-tag rounded-full px-4 py-1 text-white bg-white bg-opacity-20 hover:bg-opacity-100 hover:text-md_darkblue cursor-pointer">
             <h6>Podcast</h6>
           </div>
           <div
-            class="tag rounded-full px-4 py-1 text-white bg-white bg-opacity-20">
-            <h6 class="text-white">In-Ear Cinema</h6>
+            class="tag made-ch-tag rounded-full px-4 py-1 text-white bg-white bg-opacity-20 hover:bg-opacity-100 hover:text-md_darkblue cursor-pointer">
+            <h6>In-Ear Cinema</h6>
           </div>
           <div
-            class="tag rounded-full px-4 py-1 text-white bg-white bg-opacity-20">
-            <h6 class="text-white">Sound Story Telling</h6>
+            class="tag made-ch-tag rounded-full px-4 py-1 text-white bg-white bg-opacity-20 hover:bg-opacity-100 hover:text-md_darkblue cursor-pointer">
+            <h6>Sound Story Telling</h6>
           </div>
           <div
-            class="tag rounded-full px-4 py-1 text-white bg-white bg-opacity-20">
-            <h6 class="text-white">Experimental Media</h6>
+            class="tag made-ch-tag rounded-full px-4 py-1 text-white bg-white bg-opacity-20 hover:bg-opacity-100 hover:text-md_darkblue cursor-pointer">
+            <h6>Experimental Media</h6>
           </div>
           <div
-            class="tag rounded-full px-4 py-1 text-white bg-white bg-opacity-20">
-            <h6 class="text-white">Doumentary</h6>
+            class="tag made-ch-tag rounded-full px-4 py-1 text-white bg-white bg-opacity-20 hover:bg-opacity-100 hover:text-md_darkblue cursor-pointer">
+            <h6>Doumentary</h6>
           </div>
           <div
-            class="tag rounded-full px-4 py-1 text-white bg-white bg-opacity-20">
-            <h6 class="text-white">Art of Design</h6>
+            class="tag made-ch-tag rounded-full px-4 py-1 text-white bg-white bg-opacity-20 hover:bg-opacity-100 hover:text-md_darkblue cursor-pointer">
+            <h6>Art of Design</h6>
           </div>
         </div>
         <!-- CONTENT HIGHLIGHT Wrapper -->
-        <div class="text-white flex flex-col gap-4">
+        <div
+          class="text-white flex flex-col gap-4 md:w-full md:mx-auto md:flex-row">
           <!-- MAIN HIGHLIGHT -->
-          <div class="w-full aspect-square relative">
+          <div class="w-full aspect-square relative md:flex-1">
             <img
               class="object-cover w-full h-full"
               src="/images/mock10.jpg"
@@ -905,18 +940,17 @@
             <div
               class="absolute bottom-0 flex made_slide_overlay items-end w-full h-[70%] md:h-[60%]">
               <div
-                class="w-full h-[70%] justify-end pb-4 flex flex-col gap-3 px-4 mb_L_500:px-8 mb_L_500:max-w-[550px] mb_L_500:mx-auto md:mx-0 md:max-w-full md:px-6 md:pb-16 lg:px-10">
+                class="w-full h-[70%] justify-end pb-4 flex flex-col gap-3 px-4 mb_L_500:px-8 mb_L_500:max-w-[550px] mb_L_500:mx-auto md:mx-0 md:max-w-full md:px-4 md:pb-6 lg:px-8 lg:pb-8">
                 <!-- TAG -->
                 <div
-                  class="bg-white w-fit px-4 py-1 rounded-2xl items-center justify-center flex">
-                  <h6
-                    class="text-[12px] text-md_darkblue md:text-[16px] font-semibold">
+                  class="bg-white bg-opacity-40 w-fit px-4 py-2 rounded-full items-center justify-center flex">
+                  <h6 class="text-[14px] text-white font-bold leading-none">
                     HIGHLIGHT
                   </h6>
                 </div>
                 <!-- TITLE -->
                 <h6
-                  class="text-white font-medium text-[20px] md:text-[24px] lg:text-[26px] leading-snug">
+                  class="text-white font-medium text-[20px] md:text-[22px] lg:text-[22px] leading-snug">
                   วิทยาศาสตร์ของจิตไร้สำนึก สิ่งที่แฝงเร้นและกลไก
                   ที่ทำให้เกิดความฝันหลายรูปแบบ
                 </h6>
@@ -924,24 +958,23 @@
             </div>
           </div>
           <!-- MORE 3 HIGHLIGHT -->
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4 md:flex-1 md:justify-between">
             <!-- MORE 1 -->
             <div class="flex w-full items-center gap-4">
               <img
                 src="/images/mock6.jpg"
-                class="h-[75px] mb_L:h-[85px]"
+                class="h-[75px] mb_L:h-[85px] md:aspect-square md:h-[120px] md:object-cover lg:h-[145px]"
                 alt="" />
               <div class="flex flex-col gap-2">
                 <div
-                  class="bg-white w-fit px-4 py-1 rounded-2xl items-center justify-center flex">
-                  <h6
-                    class="text-[12px] text-md_darkblue md:text-[16px] font-semibold">
+                  class="bg-white bg-opacity-40 w-fit px-4 py-2 rounded-full items-center justify-center flex">
+                  <h6 class="text-[14px] text-white font-bold leading-none">
                     HIGHLIGHT
                   </h6>
                 </div>
                 <div class="">
                   <h6
-                    class="line-clamp-2 font-medium mb_L_500:max-h-[120px] mb_L_500:text-[16px] text-white">
+                    class="line-clamp-2 font-medium mb_L_500:text-[18px] lg:text-[20px] text-white">
                     ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้นเมืองกับพระเวท
                     ที่อยู่เบื้องหลังสีผิวของวีรบุรุษในมหาภารตะ
                   </h6>
@@ -951,43 +984,42 @@
             <!-- MORE 2 -->
             <div class="flex w-full items-center gap-4">
               <img
-                src="/images/mock6.jpg"
-                class="h-[75px] mb_L:h-[85px]"
+                src="/images/mock2.jpg"
+                class="h-[75px] mb_L:h-[85px] md:aspect-square md:h-[120px] md:object-cover lg:h-[145px]"
                 alt="" />
               <div class="flex flex-col gap-2">
                 <div
-                  class="bg-white w-fit px-4 py-1 rounded-2xl items-center justify-center flex">
-                  <h6
-                    class="text-[12px] text-md_darkblue md:text-[16px] font-semibold">
+                  class="bg-white bg-opacity-40 w-fit px-4 py-2 rounded-full items-center justify-center flex">
+                  <h6 class="text-[14px] text-white font-bold leading-none">
                     HIGHLIGHT
                   </h6>
                 </div>
-                <div>
+                <div class="">
                   <h6
-                    class="line-clamp-2 font-medium mb_L_500:max-h-[120px] mb_L_500:text-[16px] text-white">
+                    class="line-clamp-2 font-medium mb_L_500:text-[18px] lg:text-[20px] text-white">
                     ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้นเมืองกับพระเวท
                     ที่อยู่เบื้องหลังสีผิวของวีรบุรุษในมหาภารตะ
                   </h6>
                 </div>
               </div>
             </div>
+
             <!-- MORE 3 -->
             <div class="flex w-full items-center gap-4">
               <img
-                src="/images/mock6.jpg"
-                class="h-[75px] mb_L:h-[85px]"
+                src="/images/mock8.jpg"
+                class="h-[75px] mb_L:h-[85px] md:aspect-square md:h-[120px] md:object-cover lg:h-[145px]"
                 alt="" />
               <div class="flex flex-col gap-2">
                 <div
-                  class="bg-white w-fit px-4 py-1 rounded-2xl items-center justify-center flex">
-                  <h6
-                    class="text-[12px] text-md_darkblue md:text-[16px] font-semibold">
+                  class="bg-white bg-opacity-40 w-fit px-4 py-2 rounded-full items-center justify-center flex">
+                  <h6 class="text-[14px] text-white font-bold leading-none">
                     HIGHLIGHT
                   </h6>
                 </div>
-                <div>
+                <div class="">
                   <h6
-                    class="line-clamp-2 font-medium mb_L_500:max-h-[120px] mb_L_500:text-[16px] text-white">
+                    class="line-clamp-2 font-medium mb_L_500:text-[18px] lg:text-[20px] text-white">
                     ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้นเมืองกับพระเวท
                     ที่อยู่เบื้องหลังสีผิวของวีรบุรุษในมหาภารตะ
                   </h6>
@@ -996,100 +1028,227 @@
             </div>
           </div>
         </div>
-        <!-- RECENT -->
-        <div class="hidden relative flex-col md:items-start gap-6">
-          <h1 class="font-bold text-[16px] text-white">RECENT ON CHANNEL</h1>
-          <!-- RECENTSWIPER -->
+        <!-- RECENT ON  CHANNEL MD LG -->
+        <div class="hidden md:flex flex-col gap-10 mb-6 mt-6">
+          <div class="relative flex flex-col md:items-start">
+            <h1 class="font-bold text-[20px] text-white">RECENT ON CHANNEL</h1>
+          </div>
+          <!-- RECENT CARD -->
           <div class="swiper recentSwiper">
             <div class="swiper-wrapper">
               <!-- RECENT 1 -->
-              <div class="swiper-slide max-w-[133.33px] mb_L:max-w-[151.1px]">
+              <div class="swiper-slide md:max-w-[220px]">
                 <div class="flex flex-col gap-3">
                   <img src="/images/mock1.jpg" alt="" />
-                  <div class="flex flex-col gap-2">
-                    <h6 class="desc-color font-light">social news</h6>
-                    <h6
-                      class="tuncate-recent-mobile font-medium text-[14px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] text-white">
-                      ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้นเมืองกับพระเวท
-                      ที่อยู่เบื้องหลังสีผิวของวีรบุรุษในมหาภารตะ
-                    </h6>
+                  <div class="flex flex-col gap-1">
+                    <h6 class="font-light text-md_darkblue">social news</h6>
+                    <div>
+                      <h6
+                        class="line-clamp-2 font-medium md:text-[18px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] text-white">
+                        ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้นเมืองกับพระเวท
+                        ที่อยู่เบื้องหลังสีผิวของวีรบุรุษในมหาภารตะ
+                      </h6>
+                    </div>
                   </div>
                 </div>
               </div>
               <!-- RECENT 2 -->
-              <div class="swiper-slide max-w-[133.33px] mb_L:max-w-[151.1px]">
+              <div class="swiper-slide md:max-w-[220px]">
                 <div class="flex flex-col gap-3">
                   <img src="/images/mock8.jpg" alt="" />
-                  <div class="flex flex-col gap-2">
-                    <h6 class="desc-color font-light">opinion</h6>
-                    <h6
-                      class="tuncate-recent-mobile font-medium text-[14px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] text-white">
-                      ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้น
-                    </h6>
+                  <div class="flex flex-col gap-1">
+                    <h6 class="text-md_darkblue font-light">opinion</h6>
+                    <div>
+                      <h6
+                        class="line-clamp-2 font-medium md:text-[18px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] text-white">
+                        ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้นasd
+                      </h6>
+                    </div>
                   </div>
                 </div>
               </div>
               <!-- RECENT 3 -->
-              <div class="swiper-slide max-w-[133.33px] mb_L:max-w-[151.1px]">
+              <div class="swiper-slide md:max-w-[230px]">
                 <div class="flex flex-col gap-3">
                   <img src="/images/mock3.jpg" alt="" />
-                  <div class="flex flex-col gap-2">
-                    <h6 class="desc-color font-light">opinion</h6>
-                    <h6
-                      class="tuncate-recent-mobile font-medium text-[14px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] text-white">
-                      ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้น
-                    </h6>
+                  <div class="flex flex-col gap-1">
+                    <h6 class="text-md_darkblue font-light">opinion</h6>
+                    <div>
+                      <h6
+                        class="line-clamp-2 font-medium md:text-[18px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] text-white">
+                        ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้นasdasd
+                      </h6>
+                    </div>
                   </div>
                 </div>
               </div>
               <!-- RECENT 4 -->
-              <div class="swiper-slide max-w-[133.33px] mb_L:max-w-[151.1px]">
+              <div class="swiper-slide md:max-w-[230px]">
                 <div class="flex flex-col gap-3">
                   <img src="/images/mock4.jpg" alt="" />
-                  <div class="flex flex-col gap-2">
-                    <h6 class="desc-color font-light">opinion</h6>
-                    <h6
-                      class="tuncate-recent-mobile font-medium text-[14px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] text-white">
-                      ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้น
-                    </h6>
+                  <div class="flex flex-col gap-1">
+                    <h6 class="text-md_darkblue font-light">opinion</h6>
+                    <div>
+                      <h6
+                        class="line-clamp-2 font-medium md:text-[18px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] text-white">
+                        ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้นasd
+                      </h6>
+                    </div>
                   </div>
                 </div>
               </div>
-              <!-- RECENT 6 -->
-              <div class="swiper-slide max-w-[133.33px] mb_L:max-w-[151.1px]">
+              <!-- RECENT 5 -->
+              <div class="swiper-slide md:max-w-[230px]">
                 <div class="flex flex-col gap-3">
                   <img src="/images/mock5.jpg" alt="" />
-                  <div class="flex flex-col gap-2">
-                    <h6 class="desc-color font-light">opinion</h6>
-                    <h6
-                      class="tuncate-recent-mobile font-medium text-[14px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] text-white">
-                      ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้น
-                    </h6>
+                  <div class="flex flex-col gap-1">
+                    <h6 class="text-md_darkblue font-light">opinion</h6>
+                    <div>
+                      <h6
+                        class="line-clamp-2 font-medium md:text-[18px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] text-white">
+                        ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้น
+                      </h6>
+                    </div>
                   </div>
                 </div>
               </div>
               <!-- RECENT 6 -->
-              <div class="swiper-slide max-w-[133.33px] mb_L:max-w-[151.1px]">
+              <div class="swiper-slide md:max-w-[230px]">
                 <div class="flex flex-col gap-3">
                   <img src="/images/mock6.jpg" alt="" />
-                  <div class="flex flex-col gap-2">
+                  <div class="flex flex-col gap-1">
                     <h6 class="desc-color font-light">opinion</h6>
-                    <h6
-                      class="tuncate-recent-mobile font-medium text-[14px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] text-white">
-                      ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้น
-                    </h6>
+                    <div>
+                      <h6
+                        class="line-clamp-2 font-medium md:text-[18px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] text-white">
+                        ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้น
+                      </h6>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- MORE BTN -->
-          <div class="flex justify-center">
+          <div class="flex justify-center mt-10">
             <div
-              class="flex items-center justify-center leading-snug tag font-semibold text-[16px] rounded-full px-8 py-1 text-white bg-white bg-opacity-20">
+              class="flex items-center justify-center leading-snug btn-border-white font-semibold text-white text-[16px] rounded-full px-8 py-1">
               <h1>MORE</h1>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <!-- *********************** !-->
+    <!-- *********************** !-->
+    <!-- *********************** !-->
+    <!-- *********************** !-->
+    <!-- *********************** !-->
+    <!-- *******RECENT ON CHANNEL Mobile ***** !-->
+    <section
+      class="md:hidden px-6 mb_L_500:px-8 w-full flex flex-col gap-6 mb_L:gap-8 pb-8 mb_L_500:mx-auto mb_L_500:max-w-[500px] pt-6">
+      <div class="relative flex flex-col md:items-start">
+        <h1 class="font-bold text-[20px] title-color">RECENT ON CHANNEL</h1>
+      </div>
+      <div class="swiper recentSwiper">
+        <div class="swiper-wrapper">
+          <!-- RECENT 1 -->
+          <div class="swiper-slide max-w-[133.33px] mb_L:max-w-[151.1px]">
+            <div class="flex flex-col gap-3">
+              <img src="/images/mock1.jpg" alt="" />
+              <div class="flex flex-col gap-1">
+                <h6 class="font-light text-md_darkblue">social news</h6>
+                <div>
+                  <h6
+                    class="line-clamp-2 font-medium text-[14px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] title-color">
+                    ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้นเมืองกับพระเวท
+                    ที่อยู่เบื้องหลังสีผิวของวีรบุรุษในมหาภารตะ
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- RECENT 2 -->
+          <div class="swiper-slide max-w-[133.33px] mb_L:max-w-[151.1px]">
+            <div class="flex flex-col gap-3">
+              <img src="/images/mock8.jpg" alt="" />
+              <div class="flex flex-col gap-1">
+                <h6 class="text-md_darkblue font-light">opinion</h6>
+                <div>
+                  <h6
+                    class="line-clamp-2 font-medium text-[14px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] title-color">
+                    ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้นasd
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- RECENT 3 -->
+          <div class="swiper-slide max-w-[133.33px] mb_L:max-w-[151.1px]">
+            <div class="flex flex-col gap-3">
+              <img src="/images/mock3.jpg" alt="" />
+              <div class="flex flex-col gap-1">
+                <h6 class="text-md_darkblue font-light">opinion</h6>
+                <div>
+                  <h6
+                    class="line-clamp-2 font-medium text-[14px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] title-color">
+                    ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้นasdasd
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- RECENT 4 -->
+          <div class="swiper-slide max-w-[133.33px] mb_L:max-w-[151.1px]">
+            <div class="flex flex-col gap-3">
+              <img src="/images/mock4.jpg" alt="" />
+              <div class="flex flex-col gap-1">
+                <h6 class="text-md_darkblue font-light">opinion</h6>
+                <div>
+                  <h6
+                    class="line-clamp-2 font-medium text-[14px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] title-color">
+                    ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้นasd
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- RECENT 5 -->
+          <div class="swiper-slide max-w-[133.33px] mb_L:max-w-[151.1px]">
+            <div class="flex flex-col gap-3">
+              <img src="/images/mock5.jpg" alt="" />
+              <div class="flex flex-col gap-1">
+                <h6 class="text-md_darkblue font-light">opinion</h6>
+                <div>
+                  <h6
+                    class="line-clamp-2 font-medium text-[14px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] title-color">
+                    ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้น
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- RECENT 6 -->
+          <div class="swiper-slide max-w-[133.33px] mb_L:max-w-[151.1px]">
+            <div class="flex flex-col gap-3">
+              <img src="/images/mock6.jpg" alt="" />
+              <div class="flex flex-col gap-1">
+                <h6 class="desc-color font-light">opinion</h6>
+                <div>
+                  <h6
+                    class="line-clamp-2 font-medium text-[14px] max-h-[70px] mb_L_500:max-h-[120px] mb_L_500:text-[16px] title-color">
+                    ‘กฤษณะ’ แปลว่า ‘ดำ’ การผสานของศาสนาพื้น
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div
+          class="flex items-center justify-center leading-snug btn-border font-semibold text-md_darkblue text-[16px] rounded-full px-8 py-1">
+          <h1>MORE</h1>
         </div>
       </div>
     </section>
