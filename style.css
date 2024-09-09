@@ -16,6 +16,10 @@ html {
   zoom: 0.95;
   scroll-behavior: smooth;
 }
+/* RESIZE VH */
+.full-height {
+  height: calc(var(--vh, 1vh) * 100);
+}
 body {
   background-color: #fafafa;
   font-family: "Prompt", sans-serif;
@@ -78,13 +82,13 @@ body {
 #white-divider {
   margin-top: 4px;
   margin-bottom: 8px;
-  border-bottom: 1.5px solid #6182f1;
+  border-bottom: 2px solid #6182f1;
 }
 @media screen and (min-width: 1024px) {
   #white-divider {
     margin-top: 4px;
     margin-bottom: 4px;
-    border-bottom: 1.5px solid #6182f1;
+    border-bottom: 2px solid #6182f1;
     opacity: 1;
   }
 }
@@ -99,6 +103,12 @@ body {
 }
 .border-bottom {
   border-bottom: 2px solid #e6e6e6;
+}
+.tag {
+  border: 1px solid white;
+}
+.btn-border {
+  border: 2px solid #062170;
 }
 
 /* Hamburger Menu */
