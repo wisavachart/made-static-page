@@ -13,6 +13,7 @@
   box-sizing: border-box;
 }
 html {
+  zoom: 0.95;
   scroll-behavior: smooth;
 }
 body {
