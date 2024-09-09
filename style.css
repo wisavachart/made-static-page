@@ -31,7 +31,39 @@ body {
 /*SPECIAL COLOR GRADIENT */
 /*SPECIAL COLOR GRADIENT */
 /*SPECIAL COLOR GRADIENT */
-
+.made-channel {
+  background-color: hsla(215, 75%, 48%, 1);
+  background-image: radial-gradient(
+      at 14% 74%,
+      hsla(321, 34%, 66%, 0.42) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 39% 0%, hsla(334, 61%, 72%, 1) 0px, transparent 50%),
+    radial-gradient(at 3% 60%, hsla(321, 42%, 59%, 1) 0px, transparent 50%),
+    radial-gradient(at 62% 3%, hsla(321, 42%, 59%, 1) 0px, transparent 50%),
+    radial-gradient(at 79% 4%, hsla(217, 72%, 60%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 45%, hsla(218, 63%, 50%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(217, 71%, 60%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, hsla(217, 66%, 56%, 1) 0px, transparent 50%),
+    radial-gradient(at 27% 54%, hsla(333, 19%, 90%, 1) 0px, transparent 50%),
+    radial-gradient(at 7% 38%, hsla(334, 72%, 86%, 1) 0px, transparent 50%),
+    radial-gradient(at 1% 9%, hsla(337, 75%, 76%, 1) 0px, transparent 50%),
+    radial-gradient(at 36% 4%, hsla(319, 58%, 74%, 1) 0px, transparent 50%);
+}
+.made-channel2 {
+  background-color: hsla(218, 65%, 50%, 1);
+  background-image: radial-gradient(
+      at 44% 2%,
+      hsla(320, 32%, 68%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 9% 1%, rgb(247, 139, 186) 0px, transparent 50%),
+    radial-gradient(at 71% 1%, rgba(58, 61, 238, 0.653) 0px, transparent 50%),
+    radial-gradient(at 43% 36%, rgb(235, 117, 168) 0px, transparent 50%),
+    radial-gradient(at 88% 5%, hsla(223, 87%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 62% 88%, hsla(218, 65%, 50%, 1) 0px, transparent 50%),
+    radial-gradient(at 10% 31%, rgb(243, 162, 197) 0px, transparent 50%);
+}
 .made_pink_gradient {
   background: rgb(254, 170, 230);
   background: linear-gradient(
